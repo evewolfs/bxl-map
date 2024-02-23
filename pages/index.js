@@ -1,8 +1,19 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import 'mapbox-gl/dist/mapbox-gl.css'
+import Map, {
+  Marker,
+  NavigationControl,
+  Popup,
+  FullscreenControl,
+  GeolocateControl,
+} from "react-map-gl";
+import { useState } from "react";
 
 export default function Home() {
+  const [lng, setLng] = useState(4.377298);
+  const [lat, setLat] = useState(50.867416);
   return (
     <div className={styles.container}>
       <Head>
@@ -12,46 +23,30 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        
+ <Map mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_API_TOKEN}
+ style={{
+  width:"100vw",
+  height:"100vh",
+  borderRadius:"1px",
+  border:'2px solid black',
+  position: 'relative', 
+  filter: 'blur(0.5px)' 
+ }}
+ initialViewState={{
+  longitude: lng,
+  latitude: lat,
+  zoom: 14,
+}}
+mapStyle="mapbox://styles/evewolfs/ckwe0tsp02h3w15o8wzlcliwl"
+ >
+         <Marker longitude={lng} latitude={lat} />
+        <NavigationControl position="bottom-right" />
+        <FullscreenControl />
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+        <GeolocateControl />
+      </Map>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
       </main>
 
       <footer className={styles.footer}>
