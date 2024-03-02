@@ -24,3 +24,6 @@ a {
     background: black;
   }
 }
+
+.mapboxgl-popup-content {
+	padding: 0 !important;}
