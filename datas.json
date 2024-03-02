@@ -8,7 +8,7 @@
 		"price": "affordable",
 		"description": "blablablabla",
 		"gmaps": "https://maps.app.goo.gl/qWiagRbAzu1AVbHy6",
-		"category": "local breweries"
+		"category": "category1"
 	
 	},
     {
@@ -20,7 +20,7 @@
 		"price": "fancy",
 		"description": "blablablabla",
 		"gmaps": "https://maps.app.goo.gl/noFGbAswcxad3qrU8",
-		"category": "coffee"
+		"category": "category2"
 	
 	}
 
