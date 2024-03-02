@@ -1,0 +1,27 @@
+[
+	{
+		"lat": "50.86396241841002",
+		"lon": "4.374597976298187",
+		"name": "Le barboteur",
+        "title": "Local beers & great advices",
+		"distance": "4 minutes walk",
+		"price": "affordable",
+		"description": "blablablabla",
+		"gmaps": "https://maps.app.goo.gl/qWiagRbAzu1AVbHy6",
+		"category": "local breweries"
+	
+	},
+    {
+		"lat": "50.86404520621435",
+		"lon": "4.37621195456518",
+		"name": "Winok",
+        "title": "Great coffees & cakes",
+		"distance": "4 minutes walk",
+		"price": "fancy",
+		"description": "blablablabla",
+		"gmaps": "https://maps.app.goo.gl/noFGbAswcxad3qrU8",
+		"category": "coffee"
+	
+	}
+
+]
