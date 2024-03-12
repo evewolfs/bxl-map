@@ -6,6 +6,7 @@ import 'mapbox-gl/dist/mapbox-gl.css'
 import Mapcmp from './components/mapcmp';
 import ListItem from './components/ListItem';
 import datas from "./../datas.json";
+import AnimatedLogo from './components/AnimatedLogo';
 
 export default function Home() {
   const [isMapVisible, setIsMapVisible] = useState(false);
@@ -24,7 +25,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-      
+      <AnimatedLogo />
       <button onClick={handleToggle}>{isMapVisible ? 'Show the Map':'Show the List'}</button>
       {isMapVisible ? <ListItem data={datas}/> : <Mapcmp />}
  
