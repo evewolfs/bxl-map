@@ -8,7 +8,8 @@
 		"price": "affordable",
 		"description": "blablablabla",
 		"gmaps": "https://maps.app.goo.gl/qWiagRbAzu1AVbHy6",
-		"category": "category1"
+		"category": "beers",
+		"imageUrl": "/icon-beer.png"
 	
 	},
     {
@@ -20,7 +21,21 @@
 		"price": "fancy",
 		"description": "blablablabla",
 		"gmaps": "https://maps.app.goo.gl/noFGbAswcxad3qrU8",
-		"category": "category2"
+		"category": "coffees",
+		"imageUrl": "/icon-coffee.png"
+	
+	},
+	{
+		"lat": "50.86404520621435",
+		"lon": "4.37621195456518",
+		"name": "Winok",
+        "title": "Great coffees & cakes",
+		"distance": "4 minutes walk",
+		"price": "fancy",
+		"description": "blablablabla",
+		"gmaps": "https://maps.app.goo.gl/noFGbAswcxad3qrU8",
+		"category": "category2",
+		"imageUrl": "/icon-coffee.png"
 	
 	}
 

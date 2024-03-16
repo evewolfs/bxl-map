@@ -1,5 +1,13 @@
+
+@font-face {
+  font-family: 'Your Font Family';
+  src: url('https://use.typekit.net/hwo6iiz.css'); 
+}
+
+
 .container {
   padding: 0 2rem;
+  background-color: #EAE9E1;
 }
 
 .main {
@@ -10,6 +18,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "botanika-mono-web", monospace;
+  font-weight: 400;
+  font-style: italic;
+  color: #534741;
 }
 
 .footer {
@@ -40,9 +52,13 @@
 }
 
 .title {
+  color:#534741;
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 1.6rem;
+  font-family: "botanika-mono-web", monospace;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .title,
@@ -61,8 +77,9 @@
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: "botanika-mono-web", monospace;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .grid {
@@ -79,8 +96,6 @@
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 3px solid #df4848;
-  border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
 }
@@ -128,20 +143,61 @@
   }
 }
 
+.cursorpointer{
+  border:none;
+  background: none;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+}
 
-.animatedLogo {
-padding: 20%;
-  stroke:rgb(246, 255, 205);
+.animatedLogo{
+fill: transparent;
+  stroke:#534741;
   stroke-width: 1;
 
-  stroke-dasharray: 2000; /* Length of the path */
-  stroke-dashoffset: 2000; /* Initially hiding the path */
-  animation: drawLine 3s linear both; /* Animation for drawing the line */
+  stroke-dasharray: 4000; /* Length of the path */
+  stroke-dashoffset: 4000; /* Initially hiding the path */
+  animation: drawLine 30s linear both; /* Animation for drawing the line */
 }
 
 @keyframes drawLine {
   to {
-    stroke-dashoffset: 0; /* Drawing the line */
+    stroke-dashoffset: 10; /* Drawing the line */
   }
 }
 
+.togglebutton{
+  padding: 0.5%;
+  margin: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+border: 1px solid black;
+}
+.custombutton span{
+border: none;
+background-color: transparent;
+display: flex;
+flex-direction: 'column';
+align-items: 'center';
+margin-bottom: 10px;
+font-size: 12px;
+
+}
+
+.custombutton{
+  padding: 2%;
+  margin: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  }

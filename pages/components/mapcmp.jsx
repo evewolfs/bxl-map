@@ -12,6 +12,8 @@ import { useState, useRef } from "react";
 import datas from "./../../datas.json";
 import classes from "../../styles/Page.module.css";
 import Link from "next/link";
+import CustomButton from './CustomButton';
+
 
 export default function Mapcmp() {
 
@@ -43,27 +45,89 @@ export default function Mapcmp() {
 
         {/* Filter Buttons */}
         <div>
-          <button
-              onClick={() => toggleFilter('category1')}
+          <CustomButton  name="Belgian Restaurants" imageUrl="/icon-food.png" onClick={() => toggleFilter('belgian-restaurants')}
               style={{
-                fontWeight: activeFilters.includes('category1')
+                fontWeight: activeFilters.includes('belgian-restaurants')
                     ? 'bold'
                     : 'normal',
-              }}
-          >
-            Category 1
-          </button>
-          <button
-              onClick={() => toggleFilter('category2')}
+              }} />
+      
+      
+      <CustomButton  name="Beers" imageUrl="/icon-beer.png" onClick={() => toggleFilter('beers')}
               style={{
-                fontWeight: activeFilters.includes('category2')
+                fontWeight: activeFilters.includes('beers')
                     ? 'bold'
                     : 'normal',
-              }}
-          >
-            Category 2
-          </button>
-          {/* Add more buttons for other categories */}
+              }}/>
+          <CustomButton  name="Coffees" imageUrl="/icon-coffee.png" onClick={() => toggleFilter('coffees')}
+              style={{
+                fontWeight: activeFilters.includes('coffees')
+                    ? 'bold'
+                    : 'normal',
+              }}/>
+                 <CustomButton  name="Turkish Delights" imageUrl="/icon-turkish.png" onClick={() => toggleFilter('turkish')}
+              style={{
+                fontWeight: activeFilters.includes('turkish')
+                    ? 'bold'
+                    : 'normal',
+              }}/>
+                 <CustomButton  name="Bakery" imageUrl="/icon-bread.png" onClick={() => toggleFilter('bread')}
+              style={{
+                fontWeight: activeFilters.includes('bread')
+                    ? 'bold'
+                    : 'normal',
+              }}/>
+                 <CustomButton  name="Arts & Culture" imageUrl="/icon-art.png" onClick={() => toggleFilter('art')}
+              style={{
+                fontWeight: activeFilters.includes('art')
+                    ? 'bold'
+                    : 'normal',
+              }}/>
+                 <CustomButton  name="Belgian Fries" imageUrl="/icon-fries.png" onClick={() => toggleFilter('fries')}
+              style={{
+                fontWeight: activeFilters.includes('fries')
+                    ? 'bold'
+                    : 'normal',
+              }}/>
+               <CustomButton  name="Green Walks" imageUrl="/icon-leaf.png" onClick={() => toggleFilter('green')}
+              style={{
+                fontWeight: activeFilters.includes('green')
+                    ? 'bold'
+                    : 'normal',
+              }}/>
+          <CustomButton  name="Wine Bar" imageUrl="/icon-wine.png" onClick={() => toggleFilter('wine')}
+              style={{
+                fontWeight: activeFilters.includes('wine')
+                    ? 'bold'
+                    : 'normal',
+              }}/>
+                 <CustomButton  name="Transportation" imageUrl="/icon-transport.png" onClick={() => toggleFilter('transport')}
+              style={{
+                fontWeight: activeFilters.includes('transport')
+                    ? 'bold'
+                    : 'normal',
+              }}/>
+                 <CustomButton  name="Supermarket" imageUrl="/icon-supermarket.png" onClick={() => toggleFilter('supermarket')}
+              style={{
+                fontWeight: activeFilters.includes('supermarket')
+                    ? 'bold'
+                    : 'normal',
+              }}/>
+                 <CustomButton  name="Ethical Shopping" imageUrl="/icon-shopping.png" onClick={() => toggleFilter('shopping')}
+              style={{
+                fontWeight: activeFilters.includes('shopping')
+                    ? 'bold'
+                    : 'normal',
+              }}/>
+        
+                 <CustomButton  name="Pizza" imageUrl="/icon-pizza.png" onClick={() => toggleFilter('pizza')}
+              style={{
+                fontWeight: activeFilters.includes('pizza')
+                    ? 'bold'
+                    : 'normal',
+              }}/>
+    
+                
         </div>
 
         <Map
@@ -89,21 +153,24 @@ export default function Mapcmp() {
           <FullscreenControl />
           <GeolocateControl />
           {datas.map((data, index) => {
-            // Check if marker's category is in active filters
-            if (activeFilters.length === 0 || activeFilters.includes(data.category)) {
-              return (
-                  <Marker key={index} longitude={data.lon} latitude={data.lat}>
-                    <button
-                        type="button"
-                        className="cursor-pointer"
-                        onClick={(e) => zoomToSelectedLoc(e, data, index)}
-                    >
-                      { <Image src="/moule.png" alt="moule" width={72} height={16} />}
-                    </button>
-                  </Marker>
-              );
-            } else {
-              return null; // Don't render marker if it doesn't match active filters
+  // Check if marker's category matches the selected category
+  if (activeFilters.length === 0 || activeFilters.includes(data.category)) {
+    // Check if this marker's category matches the selected category
+    const isSelectedCategory = activeFilters.length === 1 && activeFilters[0] === data.category;
+
+    return (
+      <Marker key={index} longitude={data.lon} latitude={data.lat}>
+        <button
+          type="button"
+          className={styles.cursorpointer}
+          onClick={(e) => zoomToSelectedLoc(e, data, index)}
+        >
+          {isSelectedCategory && <Image src={data.imageUrl} alt={data.name} width={30} height={30} />}
+        </button>
+      </Marker>
+    );
+  } else {
+    return null;  // Don't render marker if it doesn't match active filters
             }
           })}
 

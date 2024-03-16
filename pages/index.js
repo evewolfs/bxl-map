@@ -3,10 +3,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import 'mapbox-gl/dist/mapbox-gl.css'
-import Mapcmp from './components/mapcmp';
+import Mapcmp from './components/Mapcmp';
 import ListItem from './components/ListItem';
 import datas from "./../datas.json";
 import AnimatedLogo from './components/AnimatedLogo';
+import MenuTiles from './components/MenuTiles';
 
 export default function Home() {
   const [isMapVisible, setIsMapVisible] = useState(false);
@@ -23,10 +24,11 @@ export default function Home() {
         <meta name="description" content="A map about brussels gems" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
       <AnimatedLogo />
-      <button onClick={handleToggle}>{isMapVisible ? 'Show the Map':'Show the List'}</button>
+      <h1 className={styles.title}>Things to do around the house</h1>
+      <main className={styles.main}>
+
+      <button className={styles.togglebutton} onClick={handleToggle}>{isMapVisible ? 'Show the Map':'Show the List'}</button>
       {isMapVisible ? <ListItem data={datas}/> : <Mapcmp />}
  
       </main>
