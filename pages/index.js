@@ -1,26 +1,25 @@
-import React, { useState } from 'react';
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import 'mapbox-gl/dist/mapbox-gl.css'
-import Mapcmp from './components/mapcmp';
-import ListItem from './components/ListItem';
+import React, { useState } from "react";
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import "mapbox-gl/dist/mapbox-gl.css";
+import Mapcmp from "./components/mapcmp";
+import ListItem from "./components/ListItem";
 import datas from "./../datas.json";
-import AnimatedLogo from './components/AnimatedLogo';
-import FilterButtons from './components/FilterButtons';
+import AnimatedLogo from "./components/AnimatedLogo";
+import FilterButtons from "./components/FilterButtons";
 
 export default function Home() {
   const [isMapVisible, setIsMapVisible] = useState(false);
   const [activeFilters, setActiveFilters] = useState([]);
- 
-  const toggleFilter = filter => {
-    setActiveFilters(prevFilters =>
+
+  const toggleFilter = (filter) => {
+    setActiveFilters((prevFilters) =>
       prevFilters.includes(filter)
-        ? []
-        : [filter]
+        ? prevFilters.filter((item) => item !== filter)
+        : [...prevFilters, filter]
     );
   };
-
   const handleToggle = () => {
     setIsMapVisible(!isMapVisible);
   };
@@ -36,10 +35,13 @@ export default function Home() {
       <h1 className={styles.title}>Things to do around the house</h1>
       <main className={styles.main}>
         {/* Filter Buttons */}
-        <FilterButtons activeFilters={activeFilters} toggleFilter={toggleFilter} />
+        <FilterButtons
+          activeFilters={activeFilters}
+          toggleFilter={toggleFilter}
+        />
 
         <button className={styles.togglebutton} onClick={handleToggle}>
-          {isMapVisible ? 'Show the Map' : 'Show the List'}
+          {isMapVisible ? "Show the Map" : "Show the List"}
         </button>
         {isMapVisible ? (
           <ListItem data={datas} activeFilters={activeFilters} />
@@ -54,7 +56,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>

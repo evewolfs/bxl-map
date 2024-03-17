@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import styles from '../../styles/Home.module.css';
-import 'mapbox-gl/dist/mapbox-gl.css';
+import Image from "next/image";
+import styles from "../../styles/Home.module.css";
+import "mapbox-gl/dist/mapbox-gl.css";
 import Map, {
   Marker,
   NavigationControl,
@@ -34,9 +34,9 @@ export default function Mapcmp({ activeFilters }) {
           width: "100vw",
           height: "100vh",
           borderRadius: "1px",
-          border: '2px solid black',
-          position: 'relative',
-          filter: 'blur(0.5px)'
+          border: "2px solid black",
+          position: "relative",
+          filter: "blur(0.5px)",
         }}
         initialViewState={{
           longitude: lng,
@@ -49,7 +49,10 @@ export default function Mapcmp({ activeFilters }) {
         <FullscreenControl />
         <GeolocateControl />
         {datas.map((data, index) => {
-          if (activeFilters.length === 0 || activeFilters.includes(data.category)) {
+          if (
+            activeFilters.length === 0 ||
+            activeFilters.includes(data.category)
+          ) {
             return (
               <Marker key={index} longitude={data.lon} latitude={data.lat}>
                 <button
@@ -57,7 +60,12 @@ export default function Mapcmp({ activeFilters }) {
                   className={styles.cursorpointer}
                   onClick={(e) => zoomToSelectedLoc(e, data, index)}
                 >
-                  <Image src={data.imageUrl} alt={data.name} width={40} height={40} />
+                  <Image
+                    src={data.imageUrl}
+                    alt={data.name}
+                    width={40}
+                    height={40}
+                  />
                 </button>
               </Marker>
             );
@@ -86,11 +94,17 @@ export default function Mapcmp({ activeFilters }) {
               <br />
               <label className={classes.popupLabel}>Google map: </label>
               <Link
-                href={selectedMarker.data.gmaps === "" ? "#" : selectedMarker.data.gmaps}
+                href={
+                  selectedMarker.data.gmaps === ""
+                    ? "#"
+                    : selectedMarker.data.gmaps
+                }
                 target={selectedMarker.data.gmaps === "" ? null : "_blank"}
                 className={classes.popupWebUrl}
               >
-                {selectedMarker.data.gmaps === "" ? "Nil" : selectedMarker.data.gmaps}
+                {selectedMarker.data.gmaps === ""
+                  ? "Nil"
+                  : selectedMarker.data.gmaps}
               </Link>
             </div>
           </Popup>
@@ -99,4 +113,3 @@ export default function Mapcmp({ activeFilters }) {
     </div>
   );
 }
-

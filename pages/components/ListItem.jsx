@@ -1,5 +1,5 @@
 // ListItem.jsx
-import React from 'react';
+import React from "react";
 
 const ListItem = ({ data, activeFilters }) => {
   return (
@@ -7,7 +7,10 @@ const ListItem = ({ data, activeFilters }) => {
       <h1>List of Places</h1>
       {/* List items */}
       {data.map((item, index) => {
-        if (activeFilters.length === 0 || activeFilters.includes(item.category)) {
+        if (
+          activeFilters.length === 0 ||
+          activeFilters.includes(item.category)
+        ) {
           return (
             <div key={index}>
               <h2>{item.name}</h2>

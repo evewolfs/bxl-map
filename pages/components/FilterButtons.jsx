@@ -1,9 +1,22 @@
-import React from 'react';
-import CustomButton from './CustomButton';
+import React from "react";
+import CustomButton from "./CustomButton";
 
 const filters = {
-  'coffee': 'Coffee',
-  'beer': 'Beer',
+  coffee: "Coffee",
+  beer: "Beer",
+  food: "Belgian Cuisine",
+  art: "Arts & Culture",
+  supermarket: "Supermarket",
+  fries: "Belgian Fries",
+  bread: "Bakery",
+  turkish: "Turkish Delight",
+  leaf: "Green escape",
+  wine: "Wine Bar",
+  shopping: "Ethical shopping",
+  pizza: "Pizza",
+  bike: "bike rental",
+  transport: "closest transport",
+
   // Add other filters here
 };
 
@@ -17,7 +30,7 @@ const FilterButtons = ({ activeFilters, toggleFilter }) => {
           imageUrl={`/icon-${key}.png`}
           onClick={() => toggleFilter(key)}
           style={{
-            fontWeight: activeFilters.includes(key) ? 'bold' : 'normal',
+            color: activeFilters.includes(key) ? "green" : "red",
           }}
         />
       ))}

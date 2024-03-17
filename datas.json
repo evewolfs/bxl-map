@@ -1,28 +1,303 @@
 [
-	{
-		"lat": "50.86396241841002",
-		"lon": "4.374597976298187",
-		"name": "Le barboteur",
-        "title": "Local beers & great advices",
-		"distance": "4 minutes walk",
-		"price": "affordable",
-		"description": "blablablabla",
-		"gmaps": "https://maps.app.goo.gl/qWiagRbAzu1AVbHy6",
-		"category": "beer",
-		"imageUrl": "/icon-beer.png"
-	
-	},
-    {
-		"lat": "50.86404520621435",
-		"lon": "4.37621195456518",
-		"name": "Winok",
-        "title": "Great coffees & cakes",
-		"distance": "4 minutes walk",
-		"price": "fancy",
-		"description": "blablablabla",
-		"gmaps": "https://maps.app.goo.gl/noFGbAswcxad3qrU8",
-		"category": "coffee",
-		"imageUrl": "/icon-coffee.png"
-	
-	}
+  {
+    "name": "Le Barboteur",
+    "title": "Great local beers & advices",
+    "lat": "50.86396241841002",
+    "lon": "4.374597976298187",
+    "distance": "4 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/qWiagRbAzu1AVbHy6",
+    "category": "beer",
+    "imageUrl": "/icon-beer.png"
+  },
+
+  {
+    "name": "Brasserie de La Mule",
+    "title": "Local brewery & Rockers vibes",
+    "lat": "50.866034570278984",
+    "lon": "4.373005339161121",
+    "distance": "10 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/H9gEo6ZSGH3m84LFA",
+    "category": "beer",
+    "imageUrl": "/icon-beer.png"
+  },
+
+  {
+    "name": "L'âne fou",
+    "title": "Local brewery & Rocker's vibes",
+    "lat": "50.86015047154792",
+    "lon": "4.369127685185668",
+    "distance": "15 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/9sLcAYVDTgawDDH38",
+    "categories": ["beer", "food"],
+    "imageUrl": "/icon-beer.png"
+  },
+  {
+    "name": "Live Central Park",
+    "title": "Decent menu & plenty of board games",
+    "lat": "50.86108517374717",
+    "lon": "4.384428454502443",
+    "distance": "7 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/KNi5tSfvL6xnR7LN7",
+    "categories": ["beer", "food"],
+    "imageUrl": "/icon-beer.png"
+  },
+
+  {
+    "name": "La Buvette Sint-Sebastiaan",
+    "title": "Authentic Parc Bar",
+    "lat": "50.86410816120214",
+    "lon": "4.383951567996417",
+    "distance": "3 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/EP1PuWHNy8S81wSz9",
+    "categories": ["beer", "food"],
+    "imageUrl": "/icon-beer.png"
+  },
+  {
+    "name": "Winok",
+    "title": "Great coffees & cakes",
+    "lat": "50.86404520621435",
+    "lon": "4.37621195456518",
+    "distance": "4 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/noFGbAswcxad3qrU8",
+    "category": "coffee",
+    "imageUrl": "/icon-coffee.png"
+  },
+
+  {
+    "name": "Achille",
+    "title": "Wine Bar & Fancy Bistronomy",
+    "lat": "50.86713615328621",
+    "lon": "4.37404769498416",
+    "distance": "15 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/faspYj1yqi2azieG9",
+    "category": "wine",
+    "imageUrl": "/icon-wine.png"
+  },
+  {
+    "name": "Bab's wine to share",
+    "title": "Wine & Bites",
+    "lat": "50.85908137433011",
+    "lon": "4.3909306994165815",
+    "distance": "7 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/GmpRczywJNiLbpAr9",
+    "category": "wine",
+    "imageUrl": "/icon-wine.png"
+  },
+  {
+    "name": "'t Potverdoemmeke",
+    "title": "All the classics of Belgian Cuisine",
+    "lat": "50.859403073501696",
+    "lon": "4.381685739160715",
+    "distance": "4 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/MSyufRY9XVHrt1JB7",
+    "category": "food",
+    "imageUrl": "/icon-food.png"
+  },
+  {
+    "name": "Brasserie Cochaux",
+    "title": "Art Nouveau & Traditional food",
+    "lat": "50.867718005335725",
+    "lon": "4.386753052654991",
+    "distance": "15 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/hj733MLgWagejJrAA",
+    "category": "food",
+    "imageUrl": "/icon-food.png"
+  },
+  {
+    "name": "Le Zinneke",
+    "title": "69 different Mussels seasoning",
+    "lat": "50.86404520621435",
+    "lon": "4.37621195456518",
+    "distance": "20 minutes walk / 5 minutes with the tram 25",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/ARAVpev369FuwaYz7",
+    "category": "food",
+    "imageUrl": "/icon-food.png"
+  },
+  {
+    "name": "L'âne Vert",
+    "title": "Humble & Traditional food",
+    "lat": "50.86000477113625",
+    "lon": "4.369078625337383",
+    "distance": "15 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/rdgHrC3VEFwB7KkaA",
+    "category": "food",
+    "imageUrl": "/icon-food.png"
+  },
+  {
+    "name": "Friterie Saint-Josse",
+    "title": "Closest proper fries",
+    "lat": "50.85031136759139",
+    "lon": "4.374676327847609",
+    "distance": "15 minutes with the bus 59 or 56",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/oFkcK8mZk2q6PSyYA",
+    "category": "fries",
+    "imageUrl": "/icon-fries.png"
+  },
+  {
+    "name": "Maison Antoine",
+    "title": "The best of Bruxelles",
+    "lat": "50.83715759897312",
+    "lon": "4.381346050805145",
+    "distance": "20 minutes with the bus 59 or 56",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/QicbQ4BUZEdS8VNr6",
+    "category": "fries",
+    "imageUrl": "/icon-fries.png"
+  },
+  {
+    "name": "Les idées à la pelle",
+    "title": "Organic Shop",
+    "lat": "50.86366181698164",
+    "lon": "4.374789525667192",
+    "distance": "5 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/U1qLZ8rzYUPqAvfZA",
+    "category": "supermarket",
+    "imageUrl": "/icon-supermarket.png"
+  },
+  {
+    "name": "Colruyt",
+    "title": "Most affordable supermarket",
+    "lat": "50.867212666685745",
+    "lon": "4.378086654502853",
+    "distance": "6 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/1pVqEoZTDp56UKwv8",
+    "category": "supermarket",
+    "imageUrl": "/icon-supermarket.png"
+  },
+  {
+    "name": "Intermarché",
+    "title": "Closest superparket",
+    "lat": "50.8650704877612",
+    "lon": "4.3787812679964695",
+    "distance": "4 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/pwntMcmhJmQ7Kycv7",
+    "category": "supermarket",
+    "imageUrl": "/icon-supermarket.png"
+  },
+  {
+    "name": "Emirdag Köftecisi",
+    "title": "Turkish meat sandwich and soup",
+    "lat": "50.85944717210747",
+    "lon": "4.378199659026528",
+    "distance": "3 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/nJq86eJaCWp7Cp3L9",
+    "category": "turkish",
+    "imageUrl": "/icon-turkish.png"
+  },
+  {
+    "name": "Tadim",
+    "title": "Turkish oven potatoes",
+    "lat": "50.85981964431688",
+    "lon": "4.376571319324461",
+    "distance": "3 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/erwxrvzzzJ4Qk48Z9",
+    "category": "turkish",
+    "imageUrl": "/icon-turkish.png"
+  },
+  {
+    "name": "Fes Boulangerie Patisserie",
+    "title": "Turkish Bakery",
+    "lat": "50.85975526222991",
+    "lon": "4.37675374372146",
+    "distance": "3 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/6KrRUW5pn4EuHGSQ7",
+    "category": "turkish",
+    "imageUrl": "/icon-turkish.png"
+  },
+  {
+    "name": "Cemil Pizzeria",
+    "title": "Turkish pizza",
+    "lat": "50.85769752799525",
+    "lon": "4.36934880629891",
+    "distance": "15 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/RcXhm1E3dkdNPMSS6",
+    "category": "turkish",
+    "imageUrl": "/icon-turkish.png"
+  },
+  {
+    "name": "Has Pide Kebap",
+    "title": "Turkish pizza",
+    "lat": "50.85846959374653",
+    "lon": "4.369906705740225",
+    "distance": "15 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/Ku8SPdr5kQwm7TpDA",
+    "category": "turkish",
+    "imageUrl": "/icon-turkish.png"
+  },
+  {
+    "name": "La Maison des Arts",
+    "title": "The House of Arts",
+    "lat": "50.8597650894",
+    "lon": "4.37026445450235",
+    "distance": "15 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/RTSzqNVcAJPw2ctCA",
+    "category": "art",
+    "imageUrl": "/icon-art.png"
+  },
+  {
+    "name": "Maison Autrique",
+    "title": "Art nouveau patrimoine",
+    "lat": "50.86343353697551",
+    "lon": "4.3731050238193285",
+    "distance": "10 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/GDv7RqhszcpvxptZA",
+    "category": "art",
+    "imageUrl": "/icon-art.png"
+  },
+  {
+    "name": "Les Halles de Schaerbeek",
+    "title": "Check their program",
+    "lat": "50.86013717718913",
+    "lon": "4.369464281489906",
+    "distance": "15 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/yaayKEp6Y6jcq5ky9",
+    "category": "art",
+    "imageUrl": "/icon-art.png"
+  },
+  {
+    "name": "Musée d’Art Spontané",
+    "title": "Spontaneous arts",
+    "lat": "50.86048255853152",
+    "lon": "4.369989994497084",
+    "distance": "15 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/DpJFzPNEkt5ZPB6Z8",
+    "category": "art",
+    "imageUrl": "/icon-art.png"
+  },
+  {
+    "name": "Schaerbeek Beer Museum",
+    "title": "Quirky place",
+    "lat": "50.86370903593515",
+    "lon": "4.375194425667194",
+    "distance": "5 minutes walk",
+    "description": "blablablabla",
+    "gmaps": "https://maps.app.goo.gl/PKnQjfejVdoEWdVz9",
+    "category": "art",
+    "imageUrl": "/icon-art.png"
+  }
 ]
