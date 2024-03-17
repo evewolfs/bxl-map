@@ -3,19 +3,27 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import 'mapbox-gl/dist/mapbox-gl.css'
-import Mapcmp from './components/Mapcmp';
+import Mapcmp from './components/mapcmp';
 import ListItem from './components/ListItem';
 import datas from "./../datas.json";
 import AnimatedLogo from './components/AnimatedLogo';
-import MenuTiles from './components/MenuTiles';
+import FilterButtons from './components/FilterButtons';
 
 export default function Home() {
   const [isMapVisible, setIsMapVisible] = useState(false);
+  const [activeFilters, setActiveFilters] = useState([]);
+ 
+  const toggleFilter = filter => {
+    setActiveFilters(prevFilters =>
+      prevFilters.includes(filter)
+        ? []
+        : [filter]
+    );
+  };
 
   const handleToggle = () => {
     setIsMapVisible(!isMapVisible);
   };
- 
 
   return (
     <div className={styles.container}>
@@ -27,17 +35,24 @@ export default function Home() {
       <AnimatedLogo />
       <h1 className={styles.title}>Things to do around the house</h1>
       <main className={styles.main}>
+        {/* Filter Buttons */}
+        <FilterButtons activeFilters={activeFilters} toggleFilter={toggleFilter} />
 
-      <button className={styles.togglebutton} onClick={handleToggle}>{isMapVisible ? 'Show the Map':'Show the List'}</button>
-      {isMapVisible ? <ListItem data={datas}/> : <Mapcmp />}
- 
+        <button className={styles.togglebutton} onClick={handleToggle}>
+          {isMapVisible ? 'Show the Map' : 'Show the List'}
+        </button>
+        {isMapVisible ? (
+          <ListItem data={datas} activeFilters={activeFilters} />
+        ) : (
+          <Mapcmp data={datas} activeFilters={activeFilters} />
+        )}
       </main>
 
       <footer className={styles.footer}>
         <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Powered by{' '}
           <span className={styles.logo}>
@@ -46,5 +61,5 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  )
+  );
 }
