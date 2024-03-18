@@ -9,9 +9,11 @@
 	height: 100%;
 }
 .popupTitle {
+	font-family: "verveine";
+	text-transform: uppercase;
 	background-color: #87bd41;
 	font-weight: 700;
-	font-size: medium;
+	font-size: 1.6rem;
 	color: ivory;
 	padding: 10px;
 }
@@ -19,6 +21,7 @@
 	font-weight: 400;
 	font-size: 14px;
 	padding: 10px;
+	font-family: "verveine";
 }
 .popupLabel {
 	font-weight: bold;

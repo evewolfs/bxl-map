@@ -30,24 +30,26 @@ export default function Home() {
         <title>BRUXXX</title>
         <meta name="description" content="A map about brussels gems" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://use.typekit.net/hwo6iiz.css" />
       </Head>
       <AnimatedLogo />
-      <h1 className={styles.title}>Things to do around the house</h1>
+      
       <main className={styles.main}>
+      <button className={styles.togglebutton} onClick={handleToggle}>
+          {isMapVisible ? "Show the Map" : "Show the List"}
+        </button>
+      
         {/* Filter Buttons */}
         <FilterButtons
           activeFilters={activeFilters}
           toggleFilter={toggleFilter}
         />
-
-        <button className={styles.togglebutton} onClick={handleToggle}>
-          {isMapVisible ? "Show the Map" : "Show the List"}
-        </button>
-        {isMapVisible ? (
+         {isMapVisible ? (
           <ListItem data={datas} activeFilters={activeFilters} />
         ) : (
           <Mapcmp data={datas} activeFilters={activeFilters} />
         )}
+
       </main>
 
       <footer className={styles.footer}>
