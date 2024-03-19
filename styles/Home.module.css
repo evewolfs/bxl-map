@@ -1,13 +1,9 @@
 
-@font-face {
-  font-family: "botanika-mono-web", monospace;
-  src: url('https://use.typekit.net/hwo6iiz.css'); 
-}
 
 
 .container {
   padding: 0 2rem;
-  background-color: #EAE9E1;
+  background-color: rgb(28, 28, 28);
 }
 
 .main {
@@ -18,11 +14,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: felt-tip-woman, sans-serif;
+     font-family: "Single Day", cursive;
+font-weight: 400;
+font-style: italic;
 
 font-weight: 400;
 font-style: normal;
-  color: #534741;
+  color: #fff9cb;
 }
 
 .footer {
@@ -53,11 +51,13 @@ font-style: normal;
 }
 
 .title {
-  color:#534741;
+  color:#fff9cb;
   margin: 0;
   line-height: 1.15;
   font-size: 2rem;
-  font-family: felt-tip-woman, sans-serif;
+    font-optical-sizing: auto;
+font-weight: 400;
+font-style: italic;
   font-weight: 400;
   font-style: italic;
 }
@@ -78,7 +78,7 @@ font-style: normal;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
-  font-family: "botanika-mono-web", monospace;
+   font-family: "Single Day", cursive;
   font-weight: 400;
   font-style: italic;
 }
@@ -154,12 +154,12 @@ font-style: normal;
 
 .animatedLogo{
 fill: transparent;
-  stroke:#534741;
-  stroke-width: 1;
+  stroke:#ff3845;
+  stroke-width: 3;
 
-  stroke-dasharray: 4000; /* Length of the path */
-  stroke-dashoffset: 4000; /* Initially hiding the path */
-  animation: drawLine 30s linear both; /* Animation for drawing the line */
+  stroke-dasharray: 1000; /* Length of the path */
+  stroke-dashoffset: 1000; /* Initially hiding the path */
+  animation: drawLine 3s linear both; /* Animation for drawing the line */
 }
 
 @keyframes drawLine {
@@ -178,18 +178,17 @@ fill: transparent;
   cursor: pointer;
   outline: none;
   text-align: center;
-border: 1px solid black;
+border: 1px solid #fff9cb;
 }
 .custombutton span{
 border: none;
 background-color: transparent;
-font-family: "verveine";
-text-transform: uppercase;
+ font-family: "Single Day", cursive;
 display: flex;
 flex-direction: 'column';
 align-items: 'center';
 margin-bottom: 10px;
-font-size: 1rem;
+font-size: 1.4rem;
 
 }
 

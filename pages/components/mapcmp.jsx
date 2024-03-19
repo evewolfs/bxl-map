@@ -22,7 +22,7 @@ export default function Mapcmp({ activeFilters }) {
   const zoomToSelectedLoc = (e, data, index) => {
     e.stopPropagation();
     setSelectedMarker({ data, index });
-    mapRef.current.flyTo({ center: [data.lon, data.lat], zoom: 16 });
+    mapRef.current.flyTo({ center: [data.lon, data.lat], zoom: 15 });
   };
 
   return (

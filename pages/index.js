@@ -30,7 +30,7 @@ export default function Home() {
         <title>BRUXXX</title>
         <meta name="description" content="A map about brussels gems" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="https://use.typekit.net/hwo6iiz.css" />
+
       </Head>
       <AnimatedLogo />
       

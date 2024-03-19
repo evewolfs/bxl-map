@@ -3,28 +3,36 @@
 .mainStyle {
 	max-width: 100%;
 	height: 100vh;
+	background-color: rgb(28, 28, 28) !important;
 }
 .mapStyle {
 	width: 100%;
 	height: 100%;
+
 }
+
 .popupTitle {
-	font-family: "verveine";
+	font-family: "Single Day", cursive;
 	text-transform: uppercase;
-	background-color: #87bd41;
-	font-weight: 700;
-	font-size: 1.6rem;
-	color: ivory;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2rem;
+	color: #fff9cb;
 	padding: 10px;
+	background-color: rgb(28, 28, 28);
 }
 .popupInfo {
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 1.2rem;
 	padding: 10px;
-	font-family: "verveine";
+	font-family: "Coming Soon", cursive;
+	font-weight: 400;
+	font-style: normal;
+	background-color: rgb(28, 28, 28);
 }
 .popupLabel {
 	font-weight: bold;
+	
 }
 .popupWebUrl {
 	color: dodgerblue;
