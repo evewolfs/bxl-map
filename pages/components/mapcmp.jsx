@@ -27,12 +27,15 @@ export default function Mapcmp({ activeFilters }) {
 
   return (
     <div className={styles.container}>
+      <div className={styles.mapcontainer}>
       <Map
+      
         ref={mapRef}
         mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_API_TOKEN}
         style={{
-          width: "100vw",
-          height: "100vh",
+          width: "calc(100vw - 20px)", // Adjust 20px to match the border width
+          maxWidth: "100%",
+          height: "70vh",
           borderRadius: "1px",
           border: "2px solid black",
           position: "relative",
@@ -76,7 +79,7 @@ export default function Mapcmp({ activeFilters }) {
 
         {selectedMarker && (
           <Popup
-            offset={25}
+            offset={15}
             latitude={selectedMarker.data.lat}
             longitude={selectedMarker.data.lon}
             onClose={() => {
@@ -85,31 +88,34 @@ export default function Mapcmp({ activeFilters }) {
             closeButton={false}
           >
             <h3 className={classes.popupTitle}>{selectedMarker.data.name}</h3>
+           
             <div className={classes.popupInfo}>
-              <label className={classes.popupLabel}>Name: </label>
-              <span>{selectedMarker.data.name}</span>
-              <br />
-              <label className={classes.popupLabel}>Title: </label>
+
               <span>{selectedMarker.data.title}</span>
-              <br />
-              <label className={classes.popupLabel}>Google map: </label>
+              <br/>
+              <div className={classes.popupDist}>
+
+<span>{selectedMarker.data.distance}</span>
+</div>
               <Link
-                href={
-                  selectedMarker.data.gmaps === ""
-                    ? "#"
-                    : selectedMarker.data.gmaps
-                }
-                target={selectedMarker.data.gmaps === "" ? null : "_blank"}
-                className={classes.popupWebUrl}
-              >
-                {selectedMarker.data.gmaps === ""
-                  ? "Nil"
-                  : selectedMarker.data.gmaps}
-              </Link>
+  href={
+    selectedMarker.data.gmaps === ""
+      ? "#"
+      : selectedMarker.data.gmaps
+  }
+  target={selectedMarker.data.gmaps === "" ? null : "_blank"}
+  className={classes.popupWebUrl}
+>
+  <span style={{ textDecoration: "none", color: "transparent" }}>
+    {selectedMarker.data.gmaps === "" ? "Nil" : selectedMarker.data.gmaps}
+  </span>
+  <span> See on Google Maps</span>
+</Link>
             </div>
           </Popup>
         )}
       </Map>
+      </div>
     </div>
   );
 }

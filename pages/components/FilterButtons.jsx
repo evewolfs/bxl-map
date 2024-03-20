@@ -1,5 +1,6 @@
 import React from "react";
 import CustomButton from "./CustomButton";
+import styles from "../../styles/Home.module.css";
 
 const filters = {
   coffee: "Coffee",
@@ -9,29 +10,29 @@ const filters = {
   supermarket: "Supermarket",
   fries: "Belgian Fries",
   bread: "Bakery",
-  turkish: "Turkish Delight",
-  leaf: "Green escape",
+  turkish: "Turkish food",
+  leaf: "Green space",
   wine: "Wine Bar",
-  shopping: "Ethical shopping",
+  shopping: "Shopping",
   pizza: "Pizza",
-  bike: "bike rental",
-  transport: "closest transport",
-
   // Add other filters here
 };
 
 const FilterButtons = ({ activeFilters, toggleFilter }) => {
+  const handleButtonClick = (key) => {
+    toggleFilter(key);
+
+  };
+
   return (
-    <div>
+    <div className={styles.containerfilter}>
       {Object.entries(filters).map(([key, value]) => (
         <CustomButton
           key={key}
           name={value}
-          imageUrl={`/icon-${key}.png`}
-          onClick={() => toggleFilter(key)}
-          style={{
-            color: activeFilters.includes(key) ? "green" : "red",
-          }}
+          imageUrl={`/menuicon-${key}.png`}
+          onClick={() => handleButtonClick(key)}
+          isActive={activeFilters.includes(key)}
         />
       ))}
     </div>

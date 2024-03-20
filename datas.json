@@ -8,7 +8,7 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/qWiagRbAzu1AVbHy6",
     "category": "beer",
-    "imageUrl": "/icon-beer.png"
+    "imageUrl": "/mapicon-beer.png"
   },
 
   {
@@ -20,11 +20,11 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/H9gEo6ZSGH3m84LFA",
     "category": "beer",
-    "imageUrl": "/icon-beer.png"
+    "imageUrl": "/mapicon-beer.png"
   },
 
   {
-    "name": "L'âne fou",
+    "name": "L'ane fou",
     "title": "Local brewery & Rocker's vibes",
     "lat": "50.86015047154792",
     "lon": "4.369127685185668",
@@ -32,7 +32,7 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/9sLcAYVDTgawDDH38",
     "categories": ["beer", "food"],
-    "imageUrl": "/icon-beer.png"
+    "imageUrl": "/mapicon-beer.png"
   },
   {
     "name": "Live Central Park",
@@ -43,7 +43,7 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/KNi5tSfvL6xnR7LN7",
     "categories": ["beer", "food"],
-    "imageUrl": "/icon-beer.png"
+    "imageUrl": "/mapicon-beer.png"
   },
 
   {
@@ -55,7 +55,7 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/EP1PuWHNy8S81wSz9",
     "categories": ["beer", "food"],
-    "imageUrl": "/icon-beer.png"
+    "imageUrl": "/mapicon-beer.png"
   },
   {
     "name": "Winok",
@@ -66,7 +66,7 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/noFGbAswcxad3qrU8",
     "category": "coffee",
-    "imageUrl": "/icon-coffee.png"
+    "imageUrl": "/mapicon-coffee.png"
   },
 
   {
@@ -78,7 +78,7 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/faspYj1yqi2azieG9",
     "category": "wine",
-    "imageUrl": "/icon-wine.png"
+    "imageUrl": "/mapicon-wine.png"
   },
   {
     "name": "Bab's wine to share",
@@ -89,7 +89,7 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/GmpRczywJNiLbpAr9",
     "category": "wine",
-    "imageUrl": "/icon-wine.png"
+    "imageUrl": "/mapicon-wine.png"
   },
   {
     "name": "'t Potverdoemmeke",
@@ -100,7 +100,7 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/MSyufRY9XVHrt1JB7",
     "category": "food",
-    "imageUrl": "/icon-food.png"
+    "imageUrl": "/mapicon-food.png"
   },
   {
     "name": "Brasserie Cochaux",
@@ -111,7 +111,7 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/hj733MLgWagejJrAA",
     "category": "food",
-    "imageUrl": "/icon-food.png"
+    "imageUrl": "/mapicon-food.png"
   },
   {
     "name": "Le Zinneke",
@@ -122,10 +122,10 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/ARAVpev369FuwaYz7",
     "category": "food",
-    "imageUrl": "/icon-food.png"
+    "imageUrl": "/mapicon-food.png"
   },
   {
-    "name": "L'âne Vert",
+    "name": "L'ane Vert",
     "title": "Humble & Traditional food",
     "lat": "50.86000477113625",
     "lon": "4.369078625337383",
@@ -133,7 +133,7 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/rdgHrC3VEFwB7KkaA",
     "category": "food",
-    "imageUrl": "/icon-food.png"
+    "imageUrl": "/mapicon-food.png"
   },
   {
     "name": "Friterie Saint-Josse",
@@ -144,7 +144,7 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/oFkcK8mZk2q6PSyYA",
     "category": "fries",
-    "imageUrl": "/icon-fries.png"
+    "imageUrl": "/mapicon-fries.png"
   },
   {
     "name": "Maison Antoine",
@@ -155,10 +155,10 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/QicbQ4BUZEdS8VNr6",
     "category": "fries",
-    "imageUrl": "/icon-fries.png"
+    "imageUrl": "/mapicon-fries.png"
   },
   {
-    "name": "Les idées à la pelle",
+    "name": "Les idees a la pelle",
     "title": "Organic Shop",
     "lat": "50.86366181698164",
     "lon": "4.374789525667192",
@@ -166,7 +166,7 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/U1qLZ8rzYUPqAvfZA",
     "category": "supermarket",
-    "imageUrl": "/icon-supermarket.png"
+    "imageUrl": "/mapicon-supermarket.png"
   },
   {
     "name": "Colruyt",
@@ -177,10 +177,10 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/1pVqEoZTDp56UKwv8",
     "category": "supermarket",
-    "imageUrl": "/icon-supermarket.png"
+    "imageUrl": "/mapicon-supermarket.png"
   },
   {
-    "name": "Intermarché",
+    "name": "Intermarche",
     "title": "Closest superparket",
     "lat": "50.8650704877612",
     "lon": "4.3787812679964695",
@@ -188,10 +188,10 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/pwntMcmhJmQ7Kycv7",
     "category": "supermarket",
-    "imageUrl": "/icon-supermarket.png"
+    "imageUrl": "/mapicon-supermarket.png"
   },
   {
-    "name": "Emirdag Köftecisi",
+    "name": "Emirdag Koftecisi",
     "title": "Turkish meat sandwich and soup",
     "lat": "50.85944717210747",
     "lon": "4.378199659026528",
@@ -199,7 +199,7 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/nJq86eJaCWp7Cp3L9",
     "category": "turkish",
-    "imageUrl": "/icon-turkish.png"
+    "imageUrl": "/mapicon-turkish.png"
   },
   {
     "name": "Tadim",
@@ -210,7 +210,7 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/erwxrvzzzJ4Qk48Z9",
     "category": "turkish",
-    "imageUrl": "/icon-turkish.png"
+    "imageUrl": "/mapicon-turkish.png"
   },
   {
     "name": "Fes Boulangerie Patisserie",
@@ -221,7 +221,7 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/6KrRUW5pn4EuHGSQ7",
     "category": "turkish",
-    "imageUrl": "/icon-turkish.png"
+    "imageUrl": "/mapicon-turkish.png"
   },
   {
     "name": "Cemil Pizzeria",
@@ -232,7 +232,7 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/RcXhm1E3dkdNPMSS6",
     "category": "turkish",
-    "imageUrl": "/icon-turkish.png"
+    "imageUrl": "/mapicon-turkish.png"
   },
   {
     "name": "Has Pide Kebap",
@@ -243,7 +243,7 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/Ku8SPdr5kQwm7TpDA",
     "category": "turkish",
-    "imageUrl": "/icon-turkish.png"
+    "imageUrl": "/mapicon-turkish.png"
   },
   {
     "name": "La Maison des Arts",
@@ -254,7 +254,7 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/RTSzqNVcAJPw2ctCA",
     "category": "art",
-    "imageUrl": "/icon-art.png"
+    "imageUrl": "/mapicon-art.png"
   },
   {
     "name": "Maison Autrique",
@@ -265,7 +265,7 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/GDv7RqhszcpvxptZA",
     "category": "art",
-    "imageUrl": "/icon-art.png"
+    "imageUrl": "/mapicon-art.png"
   },
   {
     "name": "Les Halles de Schaerbeek",
@@ -276,10 +276,10 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/yaayKEp6Y6jcq5ky9",
     "category": "art",
-    "imageUrl": "/icon-art.png"
+    "imageUrl": "/mapicon-art.png"
   },
   {
-    "name": "Musée d’Art Spontané",
+    "name": "Musee d’Art Spontané",
     "title": "Spontaneous arts",
     "lat": "50.86048255853152",
     "lon": "4.369989994497084",
@@ -287,7 +287,7 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/DpJFzPNEkt5ZPB6Z8",
     "category": "art",
-    "imageUrl": "/icon-art.png"
+    "imageUrl": "/mapicon-art.png"
   },
   {
     "name": "Schaerbeek Beer Museum",
@@ -298,6 +298,6 @@
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/PKnQjfejVdoEWdVz9",
     "category": "art",
-    "imageUrl": "/icon-art.png"
+    "imageUrl": "/mapicon-art.png"
   }
 ]

@@ -144,6 +144,8 @@ font-style: italic;
   }
 }
 
+
+
 .cursorpointer{
   border:none;
   background: none;
@@ -154,19 +156,34 @@ font-style: italic;
 
 .animatedLogo{
 fill: transparent;
-  stroke:#ff3845;
-  stroke-width: 3;
+  stroke: white;
+  stroke-width: 2;
 
-  stroke-dasharray: 1000; /* Length of the path */
-  stroke-dashoffset: 1000; /* Initially hiding the path */
-  animation: drawLine 3s linear both; /* Animation for drawing the line */
+  stroke-dasharray: 3000; /* Length of the path */
+  stroke-dashoffset: 3000; /* Initially hiding the path */
+  animation: drawLine 10s linear both; /* Animation for drawing the line */
 }
 
 @keyframes drawLine {
   to {
-    stroke-dashoffset: 10; /* Drawing the line */
+    stroke-dashoffset: 1; /* Drawing the line */
   }
 }
+
+.subtitle{
+  font-size: 2.4rem;
+  font-family: "Single Day", cursive;
+  text-transform: uppercase;
+  font-weight: 400;
+text-align: center;
+color: #F94E4E;
+}
+@media (max-width: 768px) {
+
+  .subtitle{
+    font-size: 1.4rem;
+    
+}}
 
 .togglebutton{
   padding: 0.5%;
@@ -187,8 +204,8 @@ background-color: transparent;
 display: flex;
 flex-direction: 'column';
 align-items: 'center';
-margin-bottom: 10px;
-font-size: 1.4rem;
+font-size: 1.2rem;
+
 
 }
 
@@ -202,4 +219,48 @@ font-size: 1.4rem;
   cursor: pointer;
   outline: none;
   text-align: center;
+  align-items: 'center';
+  }
+
+  .activeButton {
+    color: #F94E4E; /* Change text color to #F94E4E for active button */
+  }
+
+  .activeButton svg {
+    color: #F94E4E; /* Change text color to #F94E4E for active button */
+  }
+
+  @media (min-width: 768px) {
+    /* For screens wider than 768px (desktop) */
+    .maincontainer {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+
+    }
+    .mapcontainer {
+      width: 70vw;
+   
+    }
+    .containerfilter{
+      width: 30%;
+      height: 50%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    /* For screens up to 767px wide (mobile) */
+    .mapcontainer {
+      width: 100vw;
+      height: 100vh;
+      padding: 2%;
+    }
+    .containerfilter{
+      padding: 8%;
+      width: 100vw;
+    }
   }

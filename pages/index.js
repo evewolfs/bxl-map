@@ -33,6 +33,7 @@ export default function Home() {
 
       </Head>
       <AnimatedLogo />
+      <div className={styles.subtitle}>Things to do around the house</div>
       
       <main className={styles.main}>
       <button className={styles.togglebutton} onClick={handleToggle}>
@@ -40,15 +41,19 @@ export default function Home() {
         </button>
       
         {/* Filter Buttons */}
+        <div className={styles.maincontainer}>
         <FilterButtons
           activeFilters={activeFilters}
           toggleFilter={toggleFilter}
+          
         />
          {isMapVisible ? (
           <ListItem data={datas} activeFilters={activeFilters} />
         ) : (
           <Mapcmp data={datas} activeFilters={activeFilters} />
         )}
+        </div>
+       
 
       </main>
 
