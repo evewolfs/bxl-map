@@ -32,30 +32,36 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
 
       </Head>
-      <AnimatedLogo />
-      <div className={styles.subtitle}>Things to do around the house</div>
+
       
       <main className={styles.main}>
-      <button className={styles.togglebutton} onClick={handleToggle}>
-          {isMapVisible ? "Show the Map" : "Show the List"}
-        </button>
-      
+      <AnimatedLogo />
+      <div className={styles.subtitle}>Things to do around the house in Bruxelles</div>
+     
         {/* Filter Buttons */}
         <div className={styles.maincontainer}>
+          
+  
+       
         <FilterButtons
           activeFilters={activeFilters}
           toggleFilter={toggleFilter}
           
-        />
+        /></div>
+      <button className={styles.togglebutton} onClick={handleToggle}>
+          {isMapVisible ? "Show the Map" : "Show the List"}
+        </button>
          {isMapVisible ? (
           <ListItem data={datas} activeFilters={activeFilters} />
         ) : (
           <Mapcmp data={datas} activeFilters={activeFilters} />
         )}
-        </div>
+        
+     
        
 
       </main>
+
 
       <footer className={styles.footer}>
         <a

@@ -1,7 +1,8 @@
 // ListItem.jsx
 import React from "react";
+import Image from "next/image";
 
-const ListItem = ({ data, activeFilters }) => {
+const ListItem = ({ data, activeFilters,imageUrl }) => {
   return (
     <div>
       <h1>List of Places</h1>
@@ -13,6 +14,14 @@ const ListItem = ({ data, activeFilters }) => {
         ) {
           return (
             <div key={index}>
+              {data && (
+        <Image
+        src={item.imageUrl}
+        alt={data.name}
+        width={50}
+        height={50}
+      />
+      )}
               <h2>{item.name}</h2>
               <p>{item.title}</p>
               <p>{item.distance}</p>
@@ -21,7 +30,6 @@ const ListItem = ({ data, activeFilters }) => {
               <a href={item.gmaps} target="_blank" rel="noopener noreferrer">
                 View on Google Maps
               </a>
-              <p>{item.category}</p>
             </div>
           );
         } else {

@@ -9,10 +9,10 @@ const AnimatedLogo = () => {
       id="logo"
       viewBox="0 0 129.086 33.74"
       style={{
-        width: "40vw",
+        width: "20vw",
         height: "auto",
+        paddingTop:"4%",
         display: "block", // Make it a block element
-        margin: "0 auto",
         padding: "1%",
       }} // Set the width and height
     >

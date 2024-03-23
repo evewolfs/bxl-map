@@ -3,15 +3,19 @@ import CustomButton from "./CustomButton";
 import styles from "../../styles/Home.module.css";
 
 const filters = {
-  coffee: "Coffee",
-  beer: "Beer",
+  all: "All",
   food: "Belgian Cuisine",
+  beer: "Beer",
   art: "Arts & Culture",
-  supermarket: "Supermarket",
+  coffee: "Coffee",
+  archi:"Architecture",
   fries: "Belgian Fries",
+  supermarket: "Supermarket",
   bread: "Bakery",
-  turkish: "Turkish food",
-  leaf: "Green space",
+  turkish: "Turkish Food",
+  ice:"Ice-cream",
+  leaf: "Green Space",
+  choco: "Chocolate",
   wine: "Wine Bar",
   shopping: "Shopping",
   pizza: "Pizza",
@@ -20,8 +24,25 @@ const filters = {
 
 const FilterButtons = ({ activeFilters, toggleFilter }) => {
   const handleButtonClick = (key) => {
-    toggleFilter(key);
-
+    if (key === "all") {
+      // Toggle the "All" button
+      const isAllActive = activeFilters.includes("all");
+      const allFiltersActive = Object.keys(filters).every((filter) =>
+        activeFilters.includes(filter)
+      );
+      if (!isAllActive || !allFiltersActive) {
+        Object.keys(filters).forEach((filter) => {
+          toggleFilter(filter);
+        });
+      } else {
+        Object.keys(filters).forEach((filter) => {
+          toggleFilter(filter);
+        });
+      }
+    } else {
+      // Toggle individual category
+      toggleFilter(key);
+    }
   };
 
   return (
