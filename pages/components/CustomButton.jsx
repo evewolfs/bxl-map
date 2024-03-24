@@ -10,8 +10,8 @@ const CustomButton = ({ name, imageUrl, onClick, isActive }) => {
         <Image
           src={imageUrl}
           alt={name}
-          width={80}
-          height={80}
+          width={60}
+          height={60}
           
         />
       )}

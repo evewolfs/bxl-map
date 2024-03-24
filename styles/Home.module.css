@@ -1,15 +1,16 @@
 .container {
   padding: 0 2rem;
-  background-color: rgb(28, 28, 28);
+  background-color: #363D35;
 }
 
 .main {
   min-height: 100vh;
   padding: 4rem 0;
-  font-family: "Single Day", cursive;
+  font-family: "Schoolbell", cursive;
   font-weight: 400;
   font-style: normal;
   color: white;
+  filter: blur(0.3px);
 }
 
 
@@ -30,7 +31,7 @@
     display: flex;
    flex-wrap: wrap;
    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -106,7 +107,7 @@
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
-  font-family: "Single Day", cursive;
+  font-family: "Schoolbell", cursive;
   font-weight: 400;
   font-style: italic;
 }
@@ -183,7 +184,7 @@
 .animatedLogo {
   fill: transparent;
   stroke: white;
-  stroke-width: 2;
+  stroke-width: 1.5;
   padding-top: 2%;
   stroke-dasharray: 3000; /* Length of the path */
   stroke-dashoffset: 3000; /* Initially hiding the path */
@@ -192,18 +193,19 @@
 
 @keyframes drawLine {
   to {
-    stroke-dashoffset: 1; /* Drawing the line */
+    stroke-dashoffset: 10; /* Drawing the line */
   }
 }
 
 .subtitle {
-  font-size: 1rem;
-  font-family: "Single Day", cursive;
-  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "Schoolbell", cursive;
+
   font-weight: 400;
   text-align: left;
-  color: #f94e4e;
+  color: white;
   margin-bottom: 2%;
+  margin-left: 2%;
 }
 @media (max-width: 768px) {
   .subtitle {
@@ -227,7 +229,7 @@
 .custombutton span {
   border: none;
   background-color: transparent;
-  font-family: "Single Day", cursive;
+  font-family: "Schoolbell", cursive;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -236,6 +238,7 @@
 
 .custombutton {
   padding: 1%;
+  padding-right: 3%;
   margin: 0;
   border: none;
   background: none;

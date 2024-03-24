@@ -36,7 +36,7 @@ export default function Home() {
       
       <main className={styles.main}>
       <AnimatedLogo />
-      <div className={styles.subtitle}>Things to do around the house in Bruxelles</div>
+      <div className={styles.subtitle}>Recommendation list</div>
      
         {/* Filter Buttons */}
         <div className={styles.maincontainer}>
@@ -65,14 +65,12 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://evewolfs.xyz"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
+          Made by Wolfs
+      
         </a>
       </footer>
     </div>

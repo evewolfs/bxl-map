@@ -61,7 +61,7 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
             maxWidth: "100%",
             height: "70vh",
             borderRadius: "1px",
-            border: "2px solid black",
+            border:"1px solid white",
             position: "relative",
             filter: "blur(0.5px)",
           }}
