@@ -1,3 +1,4 @@
+// FilterButtons.js
 import React from "react";
 import CustomButton from "./CustomButton";
 import styles from "../../styles/Home.module.css";
@@ -7,12 +8,12 @@ const filters = {
   beer: "Beer",
   art: "Arts & Culture",
   coffee: "Coffee",
-  archi:"Architecture",
+  archi: "Architecture",
   fries: "Belgian Fries",
   supermarket: "Supermarket",
   bread: "Bakery",
   turkish: "Turkish Food",
-  ice:"Ice-cream",
+  ice: "Ice-cream",
   leaf: "Green Space",
   choco: "Chocolate",
   wine: "Wine Bar",
@@ -34,6 +35,7 @@ const FilterButtons = ({ activeFilters, toggleFilter }) => {
           key={key}
           name={value}
           imageUrl={`/menuicon-${key}.png`}
+          greenImageUrl={`/green-menuicon-${key}.png`} // Generate green icon URL dynamically
           onClick={() => handleButtonClick(key)}
           isActive={activeFilters.includes(key)}
         />

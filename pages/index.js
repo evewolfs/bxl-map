@@ -1,3 +1,4 @@
+// Home.js
 import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
@@ -20,6 +21,7 @@ export default function Home() {
         : [...prevFilters, filter]
     );
   };
+
   const handleToggle = () => {
     setIsMapVisible(!isMapVisible);
   };
@@ -30,38 +32,60 @@ export default function Home() {
         <title>BRUXXX</title>
         <meta name="description" content="A map about brussels gems" />
         <link rel="icon" href="/favicon.ico" />
-
       </Head>
 
-      
       <main className={styles.main}>
-      <AnimatedLogo />
-      <div className={styles.subtitle}>Recommendation list</div>
-     
+        <AnimatedLogo />
+        <div className={styles.subtitle}>
+          Recommendation{" "}
+          <button
+            className={`${styles.togglebutton} ${!isMapVisible && styles.active}`}
+            onClick={() => setIsMapVisible(true)}
+          >
+            Map
+          </button>
+          /{" "}
+          <button
+            className={`${styles.togglebutton} ${isMapVisible && styles.active}`}
+            onClick={() => setIsMapVisible(false)}
+          >
+            List
+          </button>{" "}
+         
+    
+        </div>
+
         {/* Filter Buttons */}
         <div className={styles.maincontainer}>
-          
-  
+          <FilterButtons
+            activeFilters={activeFilters}
+            toggleFilter={toggleFilter}
+          />
+        </div>
+        <div className={styles.viewbutton}>
+        <button
        
-        <FilterButtons
-          activeFilters={activeFilters}
-          toggleFilter={toggleFilter}
-          
-        /></div>
-      <button className={styles.togglebutton} onClick={handleToggle}>
-          {isMapVisible ? "Show the Map" : "Show the List"}
-        </button>
-         {isMapVisible ? (
-          <ListItem data={datas} activeFilters={activeFilters} />
-        ) : (
-          <Mapcmp data={datas} activeFilters={activeFilters} />
-        )}
+            className={`${styles.togglebutton} ${isMapVisible && styles.active}`}
+            onClick={() => setIsMapVisible(false)}
+          >
+            List
+          </button>{" "}
+          /{" "}
+          <button
+         
+            className={`${styles.togglebutton} ${!isMapVisible && styles.active}`}
+            onClick={() => setIsMapVisible(true)}
+          >
+            Map
+          </button>
+          </div>
         
-     
-       
-
+        {isMapVisible ? (
+          <Mapcmp data={datas} activeFilters={activeFilters} />
+        ) : (
+          <ListItem data={datas} activeFilters={activeFilters} />
+        )}
       </main>
-
 
       <footer className={styles.footer}>
         <a
@@ -70,7 +94,6 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Made by Wolfs
-      
         </a>
       </footer>
     </div>

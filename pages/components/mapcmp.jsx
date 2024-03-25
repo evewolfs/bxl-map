@@ -57,9 +57,9 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
           ref={mapRef}
           mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_API_TOKEN}
           style={{
-            width: "calc(100vw - 20px)", // Adjust 20px to match the border width
-            maxWidth: "100%",
-            height: "70vh",
+            // Adjust 20px to match the border width
+            maxWidth: "100vw",
+            height: "100vh",
             borderRadius: "1px",
             border:"1px solid white",
             position: "relative",
@@ -109,12 +109,21 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
                 <h3 className={classes.popupTitle}>
                   {selectedMarker.data.name}
                 </h3>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 417.726 7.956">
+      <path
+        fill="#fff"
+        strokeWidth="0"
+        d="M1.448 7.955a9744.251 9744.251 0 01414.829-4.399c1.931.021 1.932-2.979 0-3A9743.654 9743.654 0 001.448 4.955c-1.926.061-1.934 3.062 0 3z"
+      ></path>
+    </svg>
                 <div className={classes.popupInfo}>
                   <span>{selectedMarker.data.title}</span>
                   <br />
+                  
                   <div className={classes.popupDist}>
                     <span>{selectedMarker.data.distance}</span>
                   </div>
+    
                   <Link
                     href={
                       selectedMarker.data.gmaps === ""

@@ -1,18 +1,24 @@
-// components/CustomButton.js
+// CustomButton.js
 import Image from "next/image";
 import styles from "../../styles/Home.module.css";
 import React from "react";
 
-const CustomButton = ({ name, imageUrl, onClick, isActive }) => {
+const CustomButton = ({ name, imageUrl, greenImageUrl, onClick, isActive }) => {
   return (
     <button onClick={onClick} className={`${styles.custombutton} ${isActive ? styles.activeButton : ""}`}>
-      {imageUrl && (
+      {isActive ? (
+        <Image
+          src={greenImageUrl} // Show green image when active
+          alt={name}
+          width={80}
+          height={80}
+        />
+      ) : (
         <Image
           src={imageUrl}
           alt={name}
-          width={60}
-          height={60}
-          
+          width={80}
+          height={80}
         />
       )}
       <span>{name}</span>
