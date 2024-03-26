@@ -28,6 +28,23 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
     setSelectedMarker(null);
   };
 
+
+  const scrollToTop = () => {
+    if (document.fullscreenElement) {
+      document.exitFullscreen().then(() => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  };
+
   useEffect(() => {
     if (resetSelectedMarker && selectedMarker) {
       setSelectedMarker(null);
@@ -71,17 +88,23 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
             zoom: 12,
           }}
           mapStyle="mapbox://styles/evewolfs/ckwe0tsp02h3w15o8wzlcliwl"
-        >
+        >   
           <NavigationControl position="bottom-right" />
           <FullscreenControl />
           <GeolocateControl />
+      
           {datas.map((data, index) => {
             if (
               activeFilters.length === 0 ||
               activeFilters.includes(data.category)
             ) {
               return (
-                <Marker key={index} longitude={data.lon} latitude={data.lat}>
+                <Marker
+                key={index}
+                longitude={data.lon}
+                latitude={data.lat}
+                
+              >
                   <button
                     type="button"
                     className={styles.cursorpointer}
@@ -92,6 +115,7 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
                       alt={data.name}
                       width={50}
                       height={50}
+                      className={selectedMarker && selectedMarker.index === index ? styles.selectedMarker : ""}
                     />
                   </button>
                 </Marker>
@@ -125,30 +149,20 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
                   </div>
     
                   <Link
-                    href={
-                      selectedMarker.data.gmaps === ""
-                        ? "#"
-                        : selectedMarker.data.gmaps
-                    }
-                    target={
-                      selectedMarker.data.gmaps === "" ? null : "_blank"
-                    }
-                    className={classes.popupWebUrl}
-                  >
-                    <span
-                      style={{ textDecoration: "none", color: "transparent", textAlign:"right", bottom:"0", display: "block"
-                     }}
-                    >
-                      {selectedMarker.data.gmaps === ""
-                        ? "Nil"
-                        : selectedMarker.data.gmaps}
-                    </span>
-                    <span> See on Google Maps</span>
-                  </Link>
+  href={selectedMarker.data.gmaps === "" ? "#" : selectedMarker.data.gmaps}
+  target={selectedMarker.data.gmaps === "" ? null : "_blank"}
+  className={classes.popupWebUrl}
+>
+  {selectedMarker.data.gmaps === "" ? "Nil" : "See on Google Maps"}
+</Link>
+
                 </div>
               </div>
             </div>
           )}
+           <button className={styles.backToTopButton} onClick={scrollToTop}>
+        Back to filters
+      </button>
         </Map>
       </div>
     </div>

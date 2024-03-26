@@ -42,7 +42,7 @@
     "distance": "15 minutes walk",
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/9sLcAYVDTgawDDH38",
-    "categories": "beer",
+    "category": "beer",
     "imageUrl": "/map-icon-beer.png"
   },
   {
@@ -53,7 +53,7 @@
     "distance": "7 minutes walk",
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/KNi5tSfvL6xnR7LN7",
-    "categories": "beer",
+    "category": "beer",
     "imageUrl": "/map-icon-beer.png"
   },
 
@@ -65,7 +65,7 @@
     "distance": "3 minutes walk",
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/EP1PuWHNy8S81wSz9",
-    "categories": "beer",
+    "category": "beer",
     "imageUrl": "/map-icon-beer.png"
   },
   {
@@ -76,7 +76,7 @@
     "distance": "Take the buss 66 and walk or take the subway 5/1",
     "description": "blablablabla",
     "gmaps": "https://maps.app.goo.gl/QctwhokEpQaVyNLa9",
-    "categories": "beer",
+    "category": "beer",
     "imageUrl": "/map-icon-beer.png"
   },
   {

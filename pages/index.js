@@ -1,4 +1,3 @@
-// Home.js
 import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
@@ -11,7 +10,7 @@ import AnimatedLogo from "./components/AnimatedLogo";
 import FilterButtons from "./components/FilterButtons";
 
 export default function Home() {
-  const [isMapVisible, setIsMapVisible] = useState(false);
+  const [isMapVisible, setIsMapVisible] = useState(true); // Set to true by default
   const [activeFilters, setActiveFilters] = useState([]);
 
   const toggleFilter = (filter) => {
@@ -44,15 +43,13 @@ export default function Home() {
           >
             Map
           </button>
-          /{" "}
+          or{" "}
           <button
             className={`${styles.togglebutton} ${isMapVisible && styles.active}`}
             onClick={() => setIsMapVisible(false)}
           >
             List
           </button>{" "}
-         
-    
         </div>
 
         {/* Filter Buttons */}
@@ -63,22 +60,20 @@ export default function Home() {
           />
         </div>
         <div className={styles.viewbutton}>
-        <button
-       
+          <button
             className={`${styles.togglebutton} ${isMapVisible && styles.active}`}
             onClick={() => setIsMapVisible(false)}
           >
             List
           </button>{" "}
-          /{" "}
+          or{" "}
           <button
-         
             className={`${styles.togglebutton} ${!isMapVisible && styles.active}`}
             onClick={() => setIsMapVisible(true)}
           >
             Map
           </button>
-          </div>
+        </div>
         
         {isMapVisible ? (
           <Mapcmp data={datas} activeFilters={activeFilters} />
@@ -95,6 +90,7 @@ export default function Home() {
         >
           Made by Wolfs
         </a>
+    
       </footer>
     </div>
   );
