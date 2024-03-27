@@ -43,5 +43,9 @@ const FilterButtons = ({ activeFilters, toggleFilter }) => {
     </div>
   );
 };
+// Setting defaultProps outside the component function declaration
+FilterButtons.defaultProps = {
+  activeFilters: [], // Set a default value
+};
 
 export default FilterButtons;

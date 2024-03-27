@@ -1,9 +1,12 @@
 import React from "react";
 import Image from "next/image";
-
 import classes from "../../styles/Page.module.css";
 
+
 const ListItem = ({ data, activeFilters }) => {
+  if (!data) {
+    return null; // or return a loading indicator, error message, or handle this case accordingly
+  }
   return (
     <div className={classes.listMainBox}>
   

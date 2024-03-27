@@ -12,7 +12,7 @@ import datas from "../../datas.json";
 import classes from "../../styles/Page.module.css";
 import Link from "next/link";
 
-export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
+export default function Mapcmp({ activeFilters}) {
   const [lng, setLng] = useState(4.377298);
   const [lat, setLat] = useState(50.867416);
   const [selectedMarker, setSelectedMarker] = useState(null);
@@ -46,26 +46,28 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
   };
 
   useEffect(() => {
-    if (resetSelectedMarker && selectedMarker) {
+    if (selectedMarker) {
       setSelectedMarker(null);
     }
-  }, [resetSelectedMarker]);
+  }, []); 
 
   useEffect(() => {
     const closePopupOnMapInteraction = () => {
       closePopup();
     };
-
+  
     if (mapRef.current) {
       mapRef.current.getMap().on("click", closePopupOnMapInteraction);
       mapRef.current.getMap().on("drag", closePopupOnMapInteraction);
-
+  
       return () => {
         mapRef.current.getMap().off("click", closePopupOnMapInteraction);
         mapRef.current.getMap().off("drag", closePopupOnMapInteraction);
       };
     }
-  }, []);
+  }, [selectedMarker]); // Add selectedMarker to the dependency array
+  
+  
 
   return (
     <div className={styles.container}>
@@ -168,3 +170,6 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
     </div>
   );
 }
+Mapcmp.defaultProps = {
+  activeFilters: [], // Set a default value
+};
