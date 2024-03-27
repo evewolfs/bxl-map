@@ -1,6 +1,12 @@
 // next.config.js
 const webpack = require('webpack');
 
+const nextConfig = {
+  basePath: "/bxl-map",
+  output: "export", 
+  reactStrictMode: true,
+};
+
 module.exports = {
   webpack: (config) => {
     // Replace 'YOUR_MAPBOX_ACCESS_TOKEN' with your actual Mapbox access token
