@@ -1,26 +1,11 @@
 // next.config.js
 const webpack = require('webpack');
 
-const isGithubActions = process.env.GITHUB_ACTIONS || false
-const repo = 'bxl-map'
-
-let assetPrefix = ''
-let basePath = '/'
-
-
-if (isGithubActions) {
-  // trim off `<owner>/`
-  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
-
-  assetPrefix = `/${repo}/`
-  basePath = `/${repo}`
-}
-
 const nextConfig = {
   assetPrefix: '/bxl-map/',
-  basePath: '/bxl-map/',
-  output: "export", 
-  reactStrictMode: true,
+   basePath: '/bxl-map/',
+   output: "export",  // <=== enables static exports
+   reactStrictMode: true,
 };
 
 module.exports = {
@@ -34,7 +19,6 @@ module.exports = {
 
     return config;
   },
-  assetPrefix: assetPrefix,
-  basePath: basePath,
+
   
 };
