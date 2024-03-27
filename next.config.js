@@ -2,7 +2,7 @@
 const webpack = require('webpack');
 
 const nextConfig = {
-  basePath: "/bxl-map",
+  assetPrefix: '/bxl-map/',
   output: "export", 
   reactStrictMode: true,
 };
