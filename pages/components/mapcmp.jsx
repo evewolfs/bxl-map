@@ -12,13 +12,11 @@ import datas from "../../datas.json";
 import classes from "../../styles/Page.module.css";
 import Link from "next/link";
 
-export default function Mapcmp({ activeFilters}) {
+export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
   const [lng, setLng] = useState(4.377298);
   const [lat, setLat] = useState(50.867416);
   const [selectedMarker, setSelectedMarker] = useState(null);
   const mapRef = useRef(null);
-
-  const MAPBOX_TOKEN = 'pk.eyJ1IjoiZXZld29sZnMiLCJhIjoiY2t3ZTBjMW4wMDAzODJxcDJ2ZHNzaGN6dSJ9.TMIw2kv_p_oW2oosW1LY2w';
 
   const zoomToSelectedLoc = (e, data, index) => {
     e.stopPropagation();
@@ -48,35 +46,34 @@ export default function Mapcmp({ activeFilters}) {
   };
 
   useEffect(() => {
-    if (selectedMarker) {
+    if (resetSelectedMarker && selectedMarker) {
       setSelectedMarker(null);
     }
-  }, []); 
+  }, [resetSelectedMarker]);
 
   useEffect(() => {
     const closePopupOnMapInteraction = () => {
       closePopup();
     };
-  
+
     if (mapRef.current) {
       mapRef.current.getMap().on("click", closePopupOnMapInteraction);
       mapRef.current.getMap().on("drag", closePopupOnMapInteraction);
-  
+
       return () => {
         mapRef.current.getMap().off("click", closePopupOnMapInteraction);
         mapRef.current.getMap().off("drag", closePopupOnMapInteraction);
       };
     }
-  }, [selectedMarker]); // Add selectedMarker to the dependency array
-  
-  
+  }, []);
 
   return (
     <div className={styles.container}>
       <div className={styles.mapcontainer}>
         <Map
           ref={mapRef}
-          mapboxApiAccessToken={MAPBOX_TOKEN}          style={{
+          mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_API_TOKEN}
+          style={{
             // Adjust 20px to match the border width
             maxWidth: "100vw",
             height: "100vh",
@@ -171,6 +168,3 @@ export default function Mapcmp({ activeFilters}) {
     </div>
   );
 }
-Mapcmp.defaultProps = {
-  activeFilters: [], // Set a default value
-};
