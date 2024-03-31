@@ -75,7 +75,8 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
       <div className={styles.mapcontainer}>
         <Map
           ref={mapRef}
-          mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_API_KEY}
+          // mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_API_KEY}
+          mapboxAccessToken={"pk.eyJ1IjoiZXZld29sZnMiLCJhIjoiY2t3ZTBjMW4wMDAzODJxcDJ2ZHNzaGN6dSJ9.TMIw2kv_p_oW2oosW1LY2w"}
           style={{
             // Adjust 20px to match the border width
             maxWidth: "100vw",
