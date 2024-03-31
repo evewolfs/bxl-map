@@ -29,11 +29,11 @@ const ListItem = ({ data, activeFilters }) => {
               <div className={classes.listSubBox}>
                 {data && (
                   <Image
-                  src={`/green-menuicon-${item.category}.png`}
-                    alt={data.name}
-                    width={50}
-                    height={50}
-                  />
+                  src={`/bxl-map/green-menuicon-${item.category}.png`}
+                  alt={data.name}
+                  width={50}
+                  height={50}
+                />      
                 )}
                 <h2 className={classes.listTitle}>{item.name}</h2>
               </div>

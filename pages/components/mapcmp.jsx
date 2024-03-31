@@ -87,7 +87,7 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
             latitude: lat,
             zoom: 12,
           }}
-          mapStyle="mapbox://styles/evewolfs/ckwe0tsp02h3w15o8wzlcliwl"
+          // mapStyle="mapbox://styles/evewolfs/ckwe0tsp02h3w15o8wzlcliwl"
         >   
           <NavigationControl position="bottom-right" />
           <FullscreenControl />
@@ -111,7 +111,7 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
                     onClick={(e) => zoomToSelectedLoc(e, data, index)}
                   >
                     <Image
-                      src={data.imageUrl}
+                      src={`/bxl-map${data.imageUrl}`}
                       alt={data.name}
                       width={50}
                       height={50}
