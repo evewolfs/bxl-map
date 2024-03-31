@@ -22,4 +22,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.TOKEN_SECRET }}
-          publish_dir: ./build  # Update this to your build directoryz
+          publish_dir: ./build 
