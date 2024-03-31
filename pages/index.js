@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 import "mapbox-gl/dist/mapbox-gl.css";
 import Mapcmp from "./components/mapcmp";
 import ListItem from "./components/ListItem";
-import datas from "./../datas.json";
+import datas from "../datas.json";
 import AnimatedLogo from "./components/AnimatedLogo";
 import FilterButtons from "./components/FilterButtons";
 
