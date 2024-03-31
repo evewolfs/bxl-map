@@ -18,7 +18,7 @@ export default function Mapcmp({ activeFilters}) {
   const [selectedMarker, setSelectedMarker] = useState(null);
   const mapRef = useRef(null);
 
-  const MAPBOX_TOKEN = 'process.env.NEXT_PUBLIC_MAPBOX_API_TOKEN';
+  const MAPBOX_TOKEN = 'pk.eyJ1IjoiZXZld29sZnMiLCJhIjoiY2t3ZTBjMW4wMDAzODJxcDJ2ZHNzaGN6dSJ9.TMIw2kv_p_oW2oosW1LY2w';
 
   const zoomToSelectedLoc = (e, data, index) => {
     e.stopPropagation();
