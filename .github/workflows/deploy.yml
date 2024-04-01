@@ -18,7 +18,7 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Get evewolfs/bxl-map using actions/checkout@v2
+      - name: Deploy to GitHub Pages
         uses: actions/checkout@v2
         with:
           repository: evewolfs/bxl-map
