@@ -2,6 +2,7 @@
 import React from "react";
 import CustomButton from "./CustomButton";
 import styles from "../../styles/Home.module.css";
+// import { basePath } from "../../next.config";
 
 const filters = {
   food: "Belgian Cuisine",
@@ -34,8 +35,8 @@ const FilterButtons = ({ activeFilters, toggleFilter }) => {
         <CustomButton
           key={key}
           name={value}
-          imageUrl={`/menuicon-${key}.png`}
-          greenImageUrl={`/green-menuicon-${key}.png`} // Generate green icon URL dynamically
+          imageUrl={`/static/menuicon-${key}.png`}
+          greenImageUrl={`/static/green-menuicon-${key}.png`} // Generate green icon URL dynamically
           onClick={() => handleButtonClick(key)}
           isActive={activeFilters.includes(key)}
         />
