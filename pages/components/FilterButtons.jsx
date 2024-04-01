@@ -34,7 +34,7 @@ const FilterButtons = ({ activeFilters, toggleFilter }) => {
         <CustomButton
           key={key}
           name={value}
-          imageUrl={`evewolfs.github.io/public/static/menuicon-${key}.png`}
+          imageUrl={`/static/menuicon-${key}.png`}
           greenImageUrl={`/static/green-menuicon-${key}.png`} // Generate green icon URL dynamically
           onClick={() => handleButtonClick(key)}
           isActive={activeFilters.includes(key)}
