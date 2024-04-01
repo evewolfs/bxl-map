@@ -2,7 +2,6 @@
 import React from "react";
 import CustomButton from "./CustomButton";
 import styles from "../../styles/Home.module.css";
-// import { basePath } from "../../next.config";
 
 const filters = {
   food: "Belgian Cuisine",
