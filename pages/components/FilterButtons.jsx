@@ -2,8 +2,7 @@
 import React from "react";
 import CustomButton from "./CustomButton";
 import styles from "../../styles/Home.module.css";
-import img from "../../public/static/green-menuicon-archi.png";
-import { Images } from "./Images";
+import Images from "../../lib/Images";
 
 // const filters = {
 //   food: "Belgian Cuisine",
