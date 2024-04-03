@@ -2,7 +2,26 @@
 import React from "react";
 import CustomButton from "./CustomButton";
 import styles from "../../styles/Home.module.css";
-import { FilterButtonImages } from "../../lib/Images";
+import img from "../../public/static/green-menuicon-archi.png";
+
+const filters = {
+  food: "Belgian Cuisine",
+  beer: "Beer",
+  art: "Arts & Culture",
+  coffee: "Coffee",
+  archi: "Architecture",
+  fries: "Belgian Fries",
+  supermarket: "Supermarket",
+  bread: "Bakery",
+  turkish: "Turkish Food",
+  ice: "Ice-cream",
+  leaf: "Green Space",
+  choco: "Chocolate",
+  wine: "Wine Bar",
+  shopping: "Shopping",
+  pizza: "Pizza",
+  // Add other filters here
+};
 
 const FilterButtons = ({ activeFilters, toggleFilter }) => {
   const handleButtonClick = (key) => {
@@ -12,15 +31,14 @@ const FilterButtons = ({ activeFilters, toggleFilter }) => {
 
   return (
     <div className={styles.containerfilter}>
-      {FilterButtonImages.map((item) => (
-      // {Object.entries(filters).map(([key, value]) => (
+      {Object.entries(filters).map(([key, value]) => (
         <CustomButton
-          key={item.name}
-          name={item.name}
-          imageUrl={item.image}
-          greenImageUrl={item.greenImage} 
-          onClick={() => handleButtonClick(item.name)}
-          isActive={activeFilters.includes(item.name)}
+          key={key}
+          name={value}
+          imageUrl={`/bxl-map/static/menuicon-${key}.png`}
+          greenImageUrl={`/bxl-map/static/green-menuicon-${key}.png`} // Generate green icon URL dynamically
+          onClick={() => handleButtonClick(key)}
+          isActive={activeFilters.includes(key)}
         />
       ))}
     </div>
