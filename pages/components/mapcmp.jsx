@@ -115,7 +115,7 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
                     onClick={(e) => zoomToSelectedLoc(e, data, index)}
                   >
                     <Image
-                      src={`/bxl-map${data.imageUrl}`}
+                      src={`/bxl-map/static${data.imageUrl}`}
                       alt={data.name}
                       width={50}
                       height={50}
