@@ -3,7 +3,6 @@ import React from "react";
 import CustomButton from "./CustomButton";
 import styles from "../../styles/Home.module.css";
 
-
 const filters = {
   food: "Belgian Cuisine",
   beer: "Beer",
@@ -36,7 +35,7 @@ const FilterButtons = ({ activeFilters, toggleFilter }) => {
           key={key}
           name={value}
           imageUrl={`/static/menuicon-${key}.png`}
-          greenImageUrl={`/static/red-menuicon-${key}.png`}  
+          greenImageUrl={`/static/red-menuicon-${key}.png`}
           onClick={() => handleButtonClick(key)}
           isActive={activeFilters.includes(key)}
         />

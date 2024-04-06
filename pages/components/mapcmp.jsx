@@ -28,19 +28,18 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
     setSelectedMarker(null);
   };
 
-
   const scrollToTop = () => {
     if (document.fullscreenElement) {
       document.exitFullscreen().then(() => {
         window.scrollTo({
           top: 0,
-          behavior: "smooth"
+          behavior: "smooth",
         });
       });
     } else {
       window.scrollTo({
         top: 0,
-        behavior: "smooth"
+        behavior: "smooth",
       });
     }
   };
@@ -93,7 +92,6 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
         >
           <NavigationControl position="bottom-right" />
           <FullscreenControl />
-    
 
           {datas.map((data, index) => {
             if (
@@ -101,12 +99,7 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
               activeFilters?.includes(data.category)
             ) {
               return (
-                <Marker
-                  key={index}
-                  longitude={data.lon}
-                  latitude={data.lat}
-
-                >
+                <Marker key={index} longitude={data.lon} latitude={data.lat}>
                   <button
                     type="button"
                     className={styles.cursorpointer}
@@ -114,28 +107,29 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
                   >
                     <Image
                       src={`/static/${data.imageUrl}`}
-                  
                       alt={data.name}
                       width={50}
                       height={50}
-                      className={selectedMarker && selectedMarker.index === index ? styles.selectedMarker : ""}
+                      className={
+                        selectedMarker && selectedMarker.index === index
+                          ? styles.selectedMarker
+                          : ""
+                      }
                     />
                   </button>
                   <Marker
-                   key={index}
-                   latitude= "50.86213806282832"
-                   longitude="4.380167254502514"
- 
-                 >
-                         <Image
-              src={"/static/map-icon-house.png"} // Adjust the path with the actual image path for the home marker
-              alt="Home"
-              width={50}
-              height={50}
-            />
-                 </Marker>
+                    key={index}
+                    latitude="50.86213806282832"
+                    longitude="4.380167254502514"
+                  >
+                    <Image
+                      src={"/static/map-icon-house.png"} // Adjust the path with the actual image path for the home marker
+                      alt="Home"
+                      width={50}
+                      height={50}
+                    />
+                  </Marker>
                 </Marker>
-        
               );
             } else {
               return null; // Don't render marker if it doesn't match active filters
@@ -150,7 +144,10 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
                 <h3 className={classes.popupTitle}>
                   {selectedMarker.data.name}
                 </h3>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 417.726 7.956">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 417.726 7.956"
+                >
                   <path
                     fill="#fff"
                     strokeWidth="0"
@@ -166,13 +163,18 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
                   </div>
 
                   <Link
-                    href={selectedMarker.data.gmaps === "" ? "#" : selectedMarker.data.gmaps}
+                    href={
+                      selectedMarker.data.gmaps === ""
+                        ? "#"
+                        : selectedMarker.data.gmaps
+                    }
                     target={selectedMarker.data.gmaps === "" ? null : "_blank"}
                     className={classes.popupWebUrl}
                   >
-                    {selectedMarker.data.gmaps === "" ? "Nil" : "See on Google Maps"}
+                    {selectedMarker.data.gmaps === ""
+                      ? "Nil"
+                      : "See on Google Maps"}
                   </Link>
-
                 </div>
               </div>
             </div>

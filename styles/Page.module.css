@@ -35,7 +35,7 @@
     top: 0;
     left: 0;
     width: 90% !important;
-	height: 80%;
+    height: 80%;
     padding: 2%;
   }
 }
@@ -51,6 +51,7 @@
   cursor: pointer;
   font-family: "Schoolbell", cursive;
 }
+
 .popupContent {
   top: 0;
   left: 0;
@@ -74,6 +75,7 @@
   color: white;
   letter-spacing: 0.1cap;
 }
+
 .popupInfo {
   font-weight: 400;
   font-size: 1.8rem;
@@ -93,6 +95,7 @@
     line-height: 2rem;
   }
 }
+
 .popupLabel {
   font-weight: bold;
 }
@@ -112,9 +115,9 @@
     text-transform: uppercase;
   }
 }
+
 .popupWebUrl {
   color: var(--red);
-
   margin: 1% 0;
   padding: 1% 4%;
   font-size: 1rem;
@@ -126,9 +129,11 @@
   color: white;
   cursor: pointer;
 }
+
 .popupWebUrl span {
   left: 0;
 }
+
 .popupWebUrl:active,
 .popupWebUrl:focus {
   outline: 0;
@@ -139,6 +144,7 @@
   flex-direction: row;
   align-items: center;
 }
+
 .listTitle {
   font-size: 2rem;
   margin-left: 2%;
@@ -153,6 +159,7 @@
   align-items: center;
   column-gap: 20px; /* Adjust the gap between columns */
 }
+
 @media screen and (max-width: 768px) {
   .listMainBox {
     grid-template-columns: repeat(1, 1fr);
@@ -163,7 +170,6 @@
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 2rem;
-
   color: white;
   font-family: "Schoolbell", cursive;
   font-weight: 400;
@@ -171,7 +177,7 @@
 }
 
 @media screen and (max-width: 768px) {
-	.listInfo {
-		font-size: 1.2rem;
-	}
+  .listInfo {
+    font-size: 1.2rem;
   }
+}

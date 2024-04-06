@@ -333,7 +333,8 @@
     "gmaps": "https://maps.app.goo.gl/GDv7RqhszcpvxptZA",
     "category": "archi",
     "imageUrl": "/map-icon-archi.png"
-  },  {
+  },
+  {
     "name": "Maison Hannon",
     "title": "Wonderful Horta house",
     "lat": "50.82110640837029",
@@ -342,7 +343,8 @@
     "gmaps": "https://maps.app.goo.gl/qNznCnKxE1YeG5P28",
     "category": "archi",
     "imageUrl": "/map-icon-archi.png"
-  },  {
+  },
+  {
     "name": "Hotel van Eetvelde",
     "title": "Amazing historic house",
     "lat": "50.84731658387428",
@@ -351,7 +353,8 @@
     "gmaps": "https://maps.app.goo.gl/2TrTyDpuuATNHpP38",
     "category": "archi",
     "imageUrl": "/map-icon-archi.png"
-  },  {
+  },
+  {
     "name": "Villa Empain",
     "title": "Art nouveau architecture transformed in a modern art museum",
     "lat": "50.80907644582115",
@@ -370,7 +373,7 @@
     "gmaps": "https://maps.app.goo.gl/UR1931mMamwrSo649",
     "category": "ice",
     "imageUrl": "/map-icon-ice.png"
-  }, 
+  },
   {
     "name": "Gaston",
     "title": "Good ice-creams on an famous place of Brussels",
@@ -380,7 +383,7 @@
     "gmaps": "https://maps.app.goo.gl/uvF8ymQUqe9f8HGj8",
     "category": "ice",
     "imageUrl": "/map-icon-ice.png"
-  }, 
+  },
   {
     "name": "Bouboule",
     "title": "Delicious ice-creams",
@@ -390,7 +393,7 @@
     "gmaps": "https://maps.app.goo.gl/FinZXPN9v4j2ZSKCA",
     "category": "ice",
     "imageUrl": "/map-icon-ice.png"
-  }, 
+  },
   {
     "name": "Pain levé",
     "title": "Excellent Organic Bakery with affordable prices",
@@ -400,7 +403,7 @@
     "gmaps": "https://maps.app.goo.gl/BDDz6rhAofn1b83d6",
     "category": "bread",
     "imageUrl": "/map-icon-bread.png"
-  }, 
+  },
   {
     "name": "Côté Gourmand",
     "title": "Okay Bakery around the corner",
@@ -521,5 +524,4 @@
     "category": "leaf",
     "imageUrl": "/map-icon-leaf.png"
   }
-  
 ]

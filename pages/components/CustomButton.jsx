@@ -24,7 +24,12 @@ const CustomButton = ({ name, imageUrl, greenImageUrl, onClick, isActive }) => {
   }, []);
 
   return (
-    <button onClick={onClick} className={`${styles.custombutton} ${isActive ? styles.activeButton : ""}`}>
+    <button
+      onClick={onClick}
+      className={`${styles.custombutton} ${
+        isActive ? styles.activeButton : ""
+      }`}
+    >
       {isActive ? (
         <Image
           src={greenImageUrl} // Show green image when active

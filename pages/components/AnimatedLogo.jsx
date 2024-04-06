@@ -10,7 +10,7 @@ const AnimatedLogo = () => {
       className={styles.animatedLogo}
       style={{
         height: "auto",
-        paddingTop:"4%",
+        paddingTop: "4%",
         display: "block", // Make it a block element
         padding: "1%",
       }} // Set the width and height
