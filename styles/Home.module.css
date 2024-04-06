@@ -27,12 +27,13 @@
   width: 100vw;
   height: 80vh;
 }
-.containerFilter {
+.containerfilter {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  padding: 4% 0;
 }
 
 .footer {

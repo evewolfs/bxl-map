@@ -42,6 +42,7 @@ export default function Home() {
           <button
             className={`${styles.togglebutton} ${!isMapVisible && styles.active}`}
             onClick={() => setIsMapVisible(true)}
+            style={{fontSize:"1.2rem"}}
           >
             Map
           </button>
@@ -49,6 +50,7 @@ export default function Home() {
           <button
             className={`${styles.togglebutton} ${isMapVisible && styles.active}`}
             onClick={() => setIsMapVisible(false)}
+            style={{fontSize:"1.2rem"}}
           >
             List
           </button>{" "}
@@ -65,7 +67,7 @@ export default function Home() {
           <button
             className={`${styles.togglebutton} ${isMapVisible && styles.active}`}
             onClick={() => setIsMapVisible(false)}
-            style={{fontSize:"1.4rem"}}
+            style={{fontSize:"1.2rem"}}
           >
             List
           </button>{" "}
@@ -74,7 +76,7 @@ export default function Home() {
         
             className={`${styles.togglebutton} ${!isMapVisible && styles.active}`}
             onClick={() => setIsMapVisible(true)}
-            style={{fontSize:"1.4rem"}}
+            style={{fontSize:"1.2rem"}}
           >
             Map
           </button>
