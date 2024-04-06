@@ -1,4 +1,10 @@
 
+:root {
+  --background-color: #222222;
+  --red: #F94E4E;
+}
+
+
 
 html,
 body {
@@ -25,7 +31,7 @@ a {
   }
   body {
     color: white;
-    background: #363D35;
+    background: var(--background-color);
   }
 }
 
@@ -34,5 +40,5 @@ a {
 .mapboxgl-popup-content {
   
 	padding: 6% !important;
-background: #363D35 !important;
-background-color: #363D35 !important;}
+background: var(--background-color) !important;
+background-color: var(--background-color) !important;}

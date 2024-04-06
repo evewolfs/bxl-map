@@ -6,10 +6,9 @@ const AnimatedLogo = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      id="logo"
       viewBox="0 0 129.086 33.74"
+      className={styles.animatedLogo}
       style={{
-        width: "20vw",
         height: "auto",
         paddingTop:"4%",
         display: "block", // Make it a block element

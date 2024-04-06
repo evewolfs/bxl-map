@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/bxl-map",
-  // assetPrefix: "/bxl-map",
+  basePath: process.env.NODE_ENV === 'production' ? '/bxl-map' : '',
   reactStrictMode: true,
   images: { unoptimized: true },
   env: {

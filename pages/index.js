@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
@@ -8,6 +8,7 @@ import ListItem from "./components/ListItem";
 import datas from "../datas.json";
 import AnimatedLogo from "./components/AnimatedLogo";
 import FilterButtons from "./components/FilterButtons";
+import { annotate } from "rough-notation";
 
 export default function Home() {
   const [isMapVisible, setIsMapVisible] = useState(true); // Set to true by default
@@ -24,6 +25,7 @@ export default function Home() {
   const handleToggle = () => {
     setIsMapVisible(!isMapVisible);
   };
+
 
   return (
     <div className={styles.container}>
@@ -63,13 +65,16 @@ export default function Home() {
           <button
             className={`${styles.togglebutton} ${isMapVisible && styles.active}`}
             onClick={() => setIsMapVisible(false)}
+            style={{fontSize:"1.4rem"}}
           >
             List
           </button>{" "}
           or{" "}
           <button
+        
             className={`${styles.togglebutton} ${!isMapVisible && styles.active}`}
             onClick={() => setIsMapVisible(true)}
+            style={{fontSize:"1.4rem"}}
           >
             Map
           </button>

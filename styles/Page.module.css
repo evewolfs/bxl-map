@@ -1,184 +1,177 @@
 /* Page.module.css */
 
 .mainStyle {
-	max-width: 100%;
-	height: 100vh;
-	background-color: #363D35 !important;
+  max-width: 100%;
+  height: 100vh;
+  background-color: var(--background-color) !important;
 }
 .mapStyle {
-	width: 100%;
-	height: 100%;
-
+  width: 100%;
+  height: 100%;
 }
 
-.popupContainer{
-
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 30%;
-		height: 100vh; 
-		background: #363D35;
-  
-		transition: transform 0.3s ease-in-out;
-		transform: translateY(0);
-		z-index: 1000;
-		padding: 2%;
-	
+.popupContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100vh;
+  background: var(--background-color);
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(0);
+  z-index: 1000;
+  padding: 2%;
 }
 
 @media screen and (max-width: 768px) {
-	.popupContainer {
-	  width: 100%; /* Width for screens smaller than 768px */
-	  height: 50vh; /* Height for screens smaller than 768px */
-	  transform: translateY(100%);
-	  bottom: 0;
-	}
-
-	.popupContent{
-		top:0;
-		left:0;
-		width: 80% !important;
-		padding: 2%;
-	
-	}
+  .popupContainer {
+    width: 100%; /* Width for screens smaller than 768px */
+    height: 45vh; /* Height for screens smaller than 768px */
+    transform: translateY(130%);
+    bottom: 0;
   }
 
-.closeButton{
-		position: absolute;
-		top: 10px;
-		right: 10px;
-		background: none;
-		color:white;
-		border: none;
-		font-size: 40px;
-		cursor: pointer;
-		font-family: "Schoolbell", cursive;
-	 
-}
-.popupContent{
-	top:0;
-	left:0;
-	height: 100vh;
-	width: 50vh;
-	padding: 2%;
-
+  .popupContent {
+    top: 0;
+    left: 0;
+    width: 90% !important;
+	height: 80%;
+    padding: 2%;
+  }
 }
 
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  color: white;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  font-family: "Schoolbell", cursive;
+}
+.popupContent {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 50vh;
+  padding: 2%;
+}
 
 .popupTitle {
-	font-family: "Schoolbell", cursive;
-text-wrap: wrap;
-	line-height: 2rem;
-	font-weight: 800;
-	text-transform: uppercase;
-	font-style: normal;
-	font-size: 2rem;
-	color: white;
-	background-color: #363D35;
-	margin-top:2%;
-	margin-bottom: 2%;
-	color: white;
-	letter-spacing: 0.1cap;
-
+  font-family: "Schoolbell", cursive;
+  text-wrap: wrap;
+  line-height: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 2rem;
+  color: white;
+  background-color: var(--background-color);
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: white;
+  letter-spacing: 0.1cap;
 }
 .popupInfo {
-	font-weight: 400;
-	font-size: 1.8rem;
-	line-height: 2rem;
-	margin-top:8%;
-	color: white;
-	font-family: "Schoolbell", cursive;
-	font-weight: 400;
-	font-style: normal;
-	background-color: #363D35;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-top: 8%;
+  color: white;
+  font-family: "Schoolbell", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--background-color);
 }
 
 @media screen and (max-width: 768px) {
-	.popupInfo {
-		font-weight: 400;
-		font-size: 1.6rem;
-		line-height: 2rem;}
+  .popupInfo {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
 }
 .popupLabel {
-	font-weight: bold;
-	
+  font-weight: bold;
 }
 
-.popupDist{
-	font-size: 1.2rem;
-	margin-top: 4%;
-	margin-bottom: 2%;
-	text-transform: uppercase;
-	
+.popupDist {
+  font-size: 1.2rem;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 768px) {
-	.popupDist{
-		font-size: 0.9rem;
-		margin-top: 2%;
-		margin-bottom: 2%;
-		text-transform: uppercase;
-		
-	}
+  .popupDist {
+    font-size: 0.9rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-transform: uppercase;
+  }
 }
 .popupWebUrl {
-	color: #aac2a7;
-	
-	margin: 0;
-	padding: 1% 4%;
-	font-size: 1rem;
-	text-transform: uppercase;
-float:right;
-	border: 2px solid white; /* Set border color when not active */
-	border-radius: 100px;
-	background-color: transparent;
-	color: white;
-	cursor: pointer;
+  color: var(--red);
 
-	
+  margin: 1% 0;
+  padding: 1% 4%;
+  font-size: 1rem;
+  text-transform: uppercase;
+  float: right;
+  border: 2px solid white; /* Set border color when not active */
+  border-radius: 100px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
 }
-.popupWebUrl span{
-	left:0;
+.popupWebUrl span {
+  left: 0;
 }
 .popupWebUrl:active,
 .popupWebUrl:focus {
-	outline: 0;
+  outline: 0;
 }
 
-.listSubBox{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+.listSubBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.listTitle{
-	font-size: 2rem;
-	margin-left: 2%;
-	text-transform: uppercase;
-	letter-spacing: 0.1cap;
-	color: #aac2a7;
+.listTitle {
+  font-size: 2rem;
+  margin-left: 2%;
+  text-transform: uppercase;
+  letter-spacing: 0.1cap;
+  color: var(--red);
 }
 
 .listMainBox {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    align-items: center;
-    column-gap: 20px; /* Adjust the gap between columns */
-
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  align-items: center;
+  column-gap: 20px; /* Adjust the gap between columns */
 }
 @media screen and (max-width: 768px) {
-    .listMainBox {
-        grid-template-columns: repeat(1, 1fr);
-    }
+  .listMainBox {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
-.listInfo{
-	font-weight: 400;
-	font-size: 1.8rem;
-	line-height: 2rem;
+.listInfo {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2rem;
 
-	color: white;
-	font-family: "Schoolbell", cursive;
-	font-weight: 400;
-	font-style: normal;
+  color: white;
+  font-family: "Schoolbell", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
+
+@media screen and (max-width: 768px) {
+	.listInfo {
+		font-size: 1.2rem;
+	}
+  }

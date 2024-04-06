@@ -21,7 +21,7 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
   const zoomToSelectedLoc = (e, data, index) => {
     e.stopPropagation();
     setSelectedMarker({ data, index });
-    mapRef.current.flyTo({ center: [data.lon, data.lat], zoom: 14 });
+    // mapRef.current.flyTo({ center: [data.lon, data.lat], zoom: 14 });
   };
 
   const closePopup = () => {
@@ -66,7 +66,6 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
       };
     }
   }, []);
-  // const MAPBOX_TOKEN = 'pk.eyJ1IjoiZXZld29sZnMiLCJhIjoiY2t3ZTBjMW4wMDAzODJxcDJ2ZHNzaGN6dSJ9.TMIw2kv_p_oW2oosW1LY2w';
   if (!datas) {
     return null; // or return a loading indicator, error message, or handle this case accordingly
   }
@@ -114,14 +113,29 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
                     onClick={(e) => zoomToSelectedLoc(e, data, index)}
                   >
                     <Image
-                      src={`/bxl-map/static${data.imageUrl}`}
+                      src={`/bxl-map/bxl-map/static${data.imageUrl}`}
+                  
                       alt={data.name}
                       width={50}
                       height={50}
                       className={selectedMarker && selectedMarker.index === index ? styles.selectedMarker : ""}
                     />
                   </button>
+                  <Marker
+                   key={index}
+                   latitude= "50.86213806282832"
+                   longitude="4.380167254502514"
+ 
+                 >
+                         <Image
+              src={"/bxl-map/static/map-icon-house.png"} // Adjust the path with the actual image path for the home marker
+              alt="Home"
+              width={50}
+              height={50}
+            />
+                 </Marker>
                 </Marker>
+        
               );
             } else {
               return null; // Don't render marker if it doesn't match active filters

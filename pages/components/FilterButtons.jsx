@@ -2,7 +2,7 @@
 import React from "react";
 import CustomButton from "./CustomButton";
 import styles from "../../styles/Home.module.css";
-import img from "../../public/static/green-menuicon-archi.png";
+
 
 const filters = {
   food: "Belgian Cuisine",
@@ -36,7 +36,7 @@ const FilterButtons = ({ activeFilters, toggleFilter }) => {
           key={key}
           name={value}
           imageUrl={`/bxl-map/static/menuicon-${key}.png`}
-          greenImageUrl={`/bxl-map/static/green-menuicon-${key}.png`} // Generate green icon URL dynamically
+          greenImageUrl={`/bxl-map/static/red-menuicon-${key}.png`}  
           onClick={() => handleButtonClick(key)}
           isActive={activeFilters.includes(key)}
         />

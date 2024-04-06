@@ -1,6 +1,10 @@
+
+
+
+
 .container {
   padding: 0;
-  background-color: #363D35;
+  background-color: #222222;
 }
 
 .main {
@@ -14,27 +18,22 @@
   position: relative;
 }
 
-
-  .mainContainer {
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-  }
-  .mapcontainer {
-    width: 100vw;
-    height: 80vh;
-    
-  }
-  .containerFilter {
-    width: 100%;
-    display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-    justify-content: space-between;
-  }
-
-
-
+.mainContainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+.mapcontainer {
+  width: 100vw;
+  height: 80vh;
+}
+.containerFilter {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .footer {
   display: flex;
@@ -53,110 +52,8 @@
   flex-grow: 1;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
 
-.title {
-  color: white;
-  margin: 0;
-  line-height: 1.15;
-  font-size: 2rem;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: italic;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: "Schoolbell", cursive;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
-}
 
 .cursorpointer {
   border: none;
@@ -166,7 +63,9 @@
   outline: none;
 }
 
+
 .animatedLogo {
+  width: 60vw;
   fill: transparent;
   stroke: white;
   stroke-width: 1.5;
@@ -182,6 +81,12 @@
   }
 }
 
+@media (min-width: 768px) {
+  .animatedLogo {
+    width: 30vw; 
+  }
+}
+
 .subtitle {
   font-size: 2rem;
   font-family: "Schoolbell", cursive;
@@ -194,26 +99,25 @@
 }
 @media (max-width: 768px) {
   .subtitle {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
 .togglebutton {
   font-family: "Schoolbell", cursive;
-  font-size: 2rem;
-
-  border: 3px solid white; /* Set border color when not active */
-  border-radius: 100px;
+  font-size: 1.6rem;
+  border-color: transparent; /* Set border color to transparent when active */
   background-color: transparent;
-  color: white;
+ 
+  color: var(--red);
   cursor: pointer;
-  margin:0 1%;
+  margin: 0 1%;
 }
 
 .togglebutton.active {
-  border-color: transparent; /* Set border color to transparent when active */
-  border-radius: 0; /* Apply square borders when active */
+  color: white;
 }
+
 
 .custombutton span {
   border: none;
@@ -240,48 +144,49 @@
 }
 
 .activeButton {
-  color: #aac2a7; /* Change text color to #363D35 for active button */
+  color: var(--red); /* Change text color to #363D35 for active button */
 }
 
 .activeButton svg {
-  color: #aac2a7; /* Change text color to #F94E4E for active button */
+  color: var(--red); /* Change text color to #F94E4E for active button */
 }
 
+@media (max-width: 768px) {
+  .custombutton span{
+    font-size: 1rem;
+  }
+}
 
 .viewbutton {
   display: flex; /* Make the buttons inline-block */
   flex-direction: row;
   justify-content: flex-end;
-
+  font-size: 1.4rem;
 }
 
-
-
-.selectedMarker{
-  border: 3px #363D35 solid;
+.selectedMarker {
+  border: 3px var(--red) solid;
   border-radius: 50%;
 }
 
-.backToTopButton{
+.backToTopButton {
   z-index: 2000;
   left: 60px;
   position: absolute;
   bottom: 60px;
-border: 1px solid rgb(70, 70, 70);
+  border: 1px solid rgb(70, 70, 70);
   background-color: white;
   font-family: "Schoolbell", cursive;
   align-items: center;
   font-size: 1.2rem;
   color: rgb(70, 70, 70);
   border-radius: 100px;
-  padding: 0.5% 1% ;
-  
-  
+  padding: 0.5% 1%;
 }
 
 @media (max-width: 768px) {
   .backToTopButton {
-    top:60px;
+    top: 60px;
     bottom: auto;
   }
 }
