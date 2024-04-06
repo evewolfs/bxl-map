@@ -99,7 +99,10 @@
 }
 @media (max-width: 768px) {
   .subtitle {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+  }
+  .togglebutton{
+    font-size: 1.2rem;
   }
 }
 
