@@ -93,7 +93,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Made by Wolfs
+          Made by Eve Wolfs
         </a>
     
       </footer>
