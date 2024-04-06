@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/bxl-map",
+  // basePath: "/bxl-map",
   reactStrictMode: true,
   images: { unoptimized: true },
   env: {

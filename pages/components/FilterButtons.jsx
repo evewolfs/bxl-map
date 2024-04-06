@@ -35,8 +35,8 @@ const FilterButtons = ({ activeFilters, toggleFilter }) => {
         <CustomButton
           key={key}
           name={value}
-          imageUrl={`/bxl-map/static/menuicon-${key}.png`}
-          greenImageUrl={`/bxl-map/static/red-menuicon-${key}.png`}  
+          imageUrl={`/static/menuicon-${key}.png`}
+          greenImageUrl={`/static/red-menuicon-${key}.png`}  
           onClick={() => handleButtonClick(key)}
           isActive={activeFilters.includes(key)}
         />

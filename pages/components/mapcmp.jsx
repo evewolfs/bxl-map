@@ -113,7 +113,7 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
                     onClick={(e) => zoomToSelectedLoc(e, data, index)}
                   >
                     <Image
-                      src={`/bxl-map/bxl-map/static${data.imageUrl}`}
+                      src={`/static/${data.imageUrl}`}
                   
                       alt={data.name}
                       width={50}
@@ -128,7 +128,7 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
  
                  >
                          <Image
-              src={"/bxl-map/static/map-icon-house.png"} // Adjust the path with the actual image path for the home marker
+              src={"/static/map-icon-house.png"} // Adjust the path with the actual image path for the home marker
               alt="Home"
               width={50}
               height={50}
