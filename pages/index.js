@@ -94,7 +94,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Made by Eve Wolfs
+          Made by <span>Eve Wolfs</span>
         </a>
       </footer>
     </div>

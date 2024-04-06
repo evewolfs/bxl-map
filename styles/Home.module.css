@@ -54,6 +54,11 @@
   flex-grow: 1;
 }
 
+.footer span {
+  text-decoration: underline;
+  margin-left: 1%;
+}
+
 .cursorpointer {
   border: none;
   background: none;
