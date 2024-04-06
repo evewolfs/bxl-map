@@ -70,7 +70,7 @@
   padding-top: 2%;
   stroke-dasharray: 3000; /* Length of the path */
   stroke-dashoffset: 3000; /* Initially hiding the path */
-  animation: drawLine 10s linear both; /* Animation for drawing the line */
+  animation: drawLine 30s linear both; /* Animation for drawing the line */
 }
 
 @keyframes drawLine {
