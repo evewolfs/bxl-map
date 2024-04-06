@@ -429,7 +429,7 @@
     "title": "Contemporary Napolitan Pizza, the best of the area",
     "lat": "50.86710671380267",
     "lon": "4.374161616103163",
-    "distance": "1 minute by walk",
+    "distance": "15 minute by walk",
     "gmaps": "https://maps.app.goo.gl/2QBjtNp5Trve33N27",
     "category": "pizza",
     "imageUrl": "/map-icon-pizza.png"
@@ -439,7 +439,7 @@
     "title": "Check Rue Haute, Rue Blaes and place du jeu de balle. Lots of quirky things!",
     "lat": "50.8368427666166",
     "lon": "4.34568437919589",
-    "distance": "1 minute by walk",
+    "distance": "Take tram 92 until Petit Sablon",
     "gmaps": "https://maps.app.goo.gl/h5ZwDkCMGV6Uq3Mw8",
     "category": "shopping",
     "imageUrl": "/map-icon-shopping.png"
