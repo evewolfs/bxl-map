@@ -182,7 +182,7 @@
 }
 
 .viewbutton {
-  float: right;
+  left:60px;
   text-wrap: nowrap;
   font-family: "Schoolbell", cursive;
   font-size: 1.4rem;
