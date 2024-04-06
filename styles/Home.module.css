@@ -195,9 +195,9 @@
 
 .backToTopButton {
   z-index: 2000;
-  left: 60px;
   position: absolute;
-  bottom: 60px;
+  top: 60px;
+  right:60px;
   border: 1px solid rgb(70, 70, 70);
   background-color: white;
   font-family: "Schoolbell", cursive;
