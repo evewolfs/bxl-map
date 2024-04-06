@@ -93,7 +93,7 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
         >
           <NavigationControl position="bottom-right" />
           <FullscreenControl />
-          <GeolocateControl />
+    
 
           {datas.map((data, index) => {
             if (
