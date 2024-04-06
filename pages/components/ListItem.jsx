@@ -24,7 +24,7 @@ const ListItem = ({ data, activeFilters }) => {
               <div className={classes.listSubBox}>
                 {data && (
                   <Image
-                  src={`/static/green-menuicon-${item.category}.png`}
+                  src={`/static/red-menuicon-${item.category}.png`}
                   alt={data.name}
                   width={50}
                   height={50}
