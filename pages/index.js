@@ -62,27 +62,24 @@ export default function Home() {
             toggleFilter={toggleFilter}
           />
         </div>
-        <div className={styles.viewbutton}>
-          <button
-            className={`${styles.togglebutton} ${
-              isMapVisible && styles.active
-            }`}
-            onClick={() => setIsMapVisible(false)}
-            style={{ fontSize: "1.2rem" }}
-          >
-            List
-          </button>{" "}
-          or{" "}
-          <button
-            className={`${styles.togglebutton} ${
-              !isMapVisible && styles.active
-            }`}
-            onClick={() => setIsMapVisible(true)}
-            style={{ fontSize: "1.2rem" }}
-          >
-            Map
-          </button>
-        </div>
+        <div>
+  {isMapVisible ? (
+    <button
+      className={styles.viewbutton}
+      onClick={() => setIsMapVisible(false)}
+    >
+      See the list
+    </button>
+  ) : (
+    <button
+      className={styles.viewbutton}
+      onClick={() => setIsMapVisible(true)}
+    >
+      See the map
+    </button>
+  )}
+</div>
+
 
         {isMapVisible ? (
           <Mapcmp data={datas} activeFilters={activeFilters} />

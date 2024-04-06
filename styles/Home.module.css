@@ -182,10 +182,18 @@
 }
 
 .viewbutton {
-  display: flex; /* Make the buttons inline-block */
-  flex-direction: row;
-  justify-content: flex-end;
+  float: right;
+  text-wrap: nowrap;
+  font-family: "Schoolbell", cursive;
   font-size: 1.4rem;
+  border: 1px solid white;
+  border-radius: 100px;
+  background-color: transparent;
+  padding: 0.5% 3%;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  margin: 1%;
 }
 
 .selectedMarker {
