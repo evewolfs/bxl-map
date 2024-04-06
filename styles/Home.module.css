@@ -79,9 +79,17 @@
   }
 }
 
+@media (max-width: 767px) {
+  .animatedLogo {
+    width: 70vw;
+    margin: auto; /* Center the element on mobile */
+  }
+}
+
 @media (min-width: 768px) {
   .animatedLogo {
     width: 30vw;
+    margin: 0; /* Remove margin to align left on desktop */
   }
 }
 
@@ -91,12 +99,18 @@
   font-weight: 400;
   text-align: left;
   color: white;
+  margin: 0;
   margin-bottom: 2%;
   margin-left: 2%;
 }
+
 @media (max-width: 768px) {
   .subtitle {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    text-align: center; /* Center the text on mobile */
+    margin: auto;
+    margin-bottom: 2%; /* Maintain the bottom margin */
+    margin-left: 0; /* Reset left margin */
   }
 }
 
@@ -116,9 +130,11 @@
 
 @media (max-width: 768px) {
   .togglebutton {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    margin: 0 0.5%; /* Reduce horizontal margin for better spacing */
   }
 }
+
 
 .custombutton span {
   border: none;
