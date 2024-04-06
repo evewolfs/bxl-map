@@ -30,7 +30,12 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  padding: 4% 0;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .containerfilter{
+    padding: 4% 0;
+  }
 }
 
 .footer {
