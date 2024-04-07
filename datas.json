@@ -196,7 +196,7 @@
   },
   {
     "name": "Intermarché",
-    "title": "The closest superparket from the house",
+    "title": "The closest supermarket from the house",
     "lat": "50.8650704877612",
     "lon": "4.3787812679964695",
     "distance": "4 minutes walk",
@@ -419,7 +419,7 @@
     "title": "Traditional wood fired pizza",
     "lat": "50.86401578978143",
     "lon": "4.377519967996366",
-    "distance": "3 minute by walk",
+    "distance": "3 minutes by walk",
     "gmaps": "https://maps.app.goo.gl/CJ29gkhNJP8fGMpU7",
     "category": "pizza",
     "imageUrl": "/map-icon-pizza.png"
@@ -429,7 +429,7 @@
     "title": "Contemporary Napolitan Pizza, the best of the area",
     "lat": "50.86710671380267",
     "lon": "4.374161616103163",
-    "distance": "15 minute by walk",
+    "distance": "15 minutes by walk",
     "gmaps": "https://maps.app.goo.gl/2QBjtNp5Trve33N27",
     "category": "pizza",
     "imageUrl": "/map-icon-pizza.png"
@@ -449,7 +449,7 @@
     "title": "Very nice comic strips, books and posters shop",
     "lat": "50.864191305759626",
     "lon": "4.375305283338059",
-    "distance": "3 minute by walk",
+    "distance": "3 minutes by walk",
     "gmaps": "https://maps.app.goo.gl/MhWhYNPjhoyANacA9",
     "category": "shopping",
     "imageUrl": "/map-icon-shopping.png"
@@ -459,7 +459,7 @@
     "title": "French book shop",
     "lat": "50.863370333609275",
     "lon": "4.376353236984805",
-    "distance": "3 minute by walk",
+    "distance": "3 minutes by walk",
     "gmaps": "https://maps.app.goo.gl/FuCGKvVYmxD2E2Uf8",
     "category": "shopping",
     "imageUrl": "/map-icon-shopping.png"
