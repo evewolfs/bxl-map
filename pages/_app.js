@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import GoogleAnalytics from '../components/GoogleAnalytics';
+import GoogleAnalytics from './components/GoogleAnalytics';
 
 function MyApp({ Component, pageProps }) {
   
