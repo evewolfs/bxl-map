@@ -12,7 +12,14 @@ export default function Home() {
   const [isMapVisible, setIsMapVisible] = useState(true); // Set to true by default
   const [activeFilters, setActiveFilters] = useState([]);
 
+  
   const toggleFilter = (filter) => {
+        // Track event when filter button is clicked
+        window.gtag('event', 'click', {
+          event_category: 'Filter Button',
+          event_label: filter,
+        });
+        
     setActiveFilters((prevFilters) =>
       prevFilters.includes(filter)
         ? prevFilters.filter((item) => item !== filter)
@@ -20,7 +27,12 @@ export default function Home() {
     );
   };
 
+  
   const handleToggle = () => {
+    window.gtag('event', 'click', {
+      event_category: 'Marker Click',
+      event_label: data.name,
+    });
     setIsMapVisible(!isMapVisible);
   };
 

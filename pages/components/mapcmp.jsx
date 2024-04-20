@@ -19,6 +19,11 @@ export default function Mapcmp({ activeFilters, resetSelectedMarker }) {
   const mapRef = useRef(null);
 
   const zoomToSelectedLoc = (e, data, index) => {
+    window.gtag('event', 'click', {
+      event_category: 'Marker Click',
+      event_label: data.name,
+    });
+    
     e.stopPropagation();
     setSelectedMarker({ data, index });
     // mapRef.current.flyTo({ center: [data.lon, data.lat], zoom: 14 });
