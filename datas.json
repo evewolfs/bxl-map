@@ -109,7 +109,7 @@
     "title": "Residential Wine Bar",
     "lat": "50.85044511782568",
     "lon": "4.3933701967083545",
-    "distance": "15 minutes walk",
+    "distance": "20 minutes walk",
     "gmaps": "https://maps.app.goo.gl/UrgGqLYPgNrkU9Ww8",
     "category": "wine",
     "imageUrl": "/map-icon-wine.png"
@@ -129,7 +129,7 @@
     "title": "A mix of International & Belgian Cuisine; wines & beers",
     "lat": "50.85043089150814",
     "lon": "4.394464181365409",
-    "distance": "15 minutes walk",
+    "distance": "20 minutes walk",
     "gmaps": "https://maps.app.goo.gl/eMcDkqjS4sU4R9LEA",
     "category": "food",
     "imageUrl": "/map-icon-food.png"
