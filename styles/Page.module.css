@@ -123,8 +123,7 @@
   color: var(--red);
   margin: 1% 0;
   padding: 1% 4%;
-  font-size: 1rem;
-  width: 80%;
+  font-size: 0.8rem;
   text-transform: uppercase;
   float: right;
   border: 2px solid white; /* Set border color when not active */
