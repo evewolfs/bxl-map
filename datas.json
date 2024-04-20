@@ -105,12 +105,32 @@
     "imageUrl": "/map-icon-wine.png"
   },
   {
+    "name": "Chez Felix",
+    "title": "Residential Wine Bar",
+    "lat": "50.85044511782568",
+    "lon": "4.3933701967083545",
+    "distance": "15 minutes walk",
+    "gmaps": "https://maps.app.goo.gl/UrgGqLYPgNrkU9Ww8",
+    "category": "wine",
+    "imageUrl": "/map-icon-wine.png"
+  },
+  {
     "name": "'t Potverdoemmeke",
     "title": "All the classics of Belgian Cuisine",
     "lat": "50.859403073501696",
     "lon": "4.381685739160715",
     "distance": "5 minutes walk",
     "gmaps": "https://maps.app.goo.gl/MSyufRY9XVHrt1JB7",
+    "category": "food",
+    "imageUrl": "/map-icon-food.png"
+  },
+  {
+    "name": "Perruche",
+    "title": "A mix of International & Belgian Cuisine; wines & beers",
+    "lat": "50.85043089150814",
+    "lon": "4.394464181365409",
+    "distance": "15 minutes walk",
+    "gmaps": "https://maps.app.goo.gl/eMcDkqjS4sU4R9LEA",
     "category": "food",
     "imageUrl": "/map-icon-food.png"
   },
@@ -375,6 +395,16 @@
     "imageUrl": "/map-icon-ice.png"
   },
   {
+    "name": "Glacerie Jalou",
+    "title": "Tasty (chocolate) Ice-creams",
+    "lat": "50.85641958981076",
+    "lon": "4.392301103327181",
+    "distance": "15 minutes walk",
+    "gmaps": "https://maps.app.goo.gl/UR1931mMamwrSo649",
+    "category": "ice",
+    "imageUrl": "/map-icon-ice.png"
+  },
+  {
     "name": "Gaston",
     "title": "Good ice-creams on an famous place of Brussels",
     "lat": "50.853456708637935",
@@ -463,6 +493,36 @@
     "gmaps": "https://maps.app.goo.gl/FuCGKvVYmxD2E2Uf8",
     "category": "shopping",
     "imageUrl": "/map-icon-shopping.png"
+  },
+  {
+    "name": "Xocolate",
+    "title": "Delicious chocolate maker in the neighbourhood",
+    "lat": "50.855732428248544",
+    "lon": "4.389172865789868",
+    "distance": "15 minutes by walk",
+    "gmaps": "https://maps.app.goo.gl/F9d8TemGFsrtSbnbA",
+    "category": "choco",
+    "imageUrl": "/map-icon-choco.png"
+  },
+  {
+    "name": "Van Dender Sweet bakery",
+    "title": "Reknown chocolate maker in the neighbourhood",
+    "lat": "50.85209914795968",
+    "lon": "4.386962268870489",
+    "distance": "15 minutes by walk",
+    "gmaps": "https://maps.app.goo.gl/io93qPYLrgouAWNDA",
+    "category": "choco",
+    "imageUrl": "/map-icon-choco.png"
+  },
+  {
+    "name": "Concept Chocolate",
+    "title": "Chocolate workshop visit, wine testing & participative workshops",
+    "lat": "50.85680527226681",
+    "lon": "4.392681423762145",
+    "distance": "15 minutes by walk",
+    "gmaps": "https://maps.app.goo.gl/AMxFzdz51zp2higE7",
+    "category": "choco",
+    "imageUrl": "/map-icon-choco.png"
   },
   {
     "name": "Benoit Nihant Chocolatier",
