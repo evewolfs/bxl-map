@@ -114,16 +114,7 @@
     "category": "wine",
     "imageUrl": "/map-icon-wine.png"
   },
-  {
-    "name": "'t Potverdoemmeke",
-    "title": "All the classics of Belgian Cuisine",
-    "lat": "50.859403073501696",
-    "lon": "4.381685739160715",
-    "distance": "5 minutes walk",
-    "gmaps": "https://maps.app.goo.gl/MSyufRY9XVHrt1JB7",
-    "category": "food",
-    "imageUrl": "/map-icon-food.png"
-  },
+
   {
     "name": "Perruche",
     "title": "A mix of International & Belgian Cuisine; wines & beers",
@@ -185,7 +176,7 @@
     "imageUrl": "/map-icon-fries.png"
   },
   {
-    "name": "Friterie de la Barriere",
+    "name": "Friterie de la Barrière",
     "title": "Another fries institution",
     "lat": "50.82724642776651",
     "lon": "4.342732428363883",
@@ -245,22 +236,12 @@
     "imageUrl": "/map-icon-turkish.png"
   },
   {
-    "name": "Cemil Pizzeria",
+    "name": "Lale Pide",
     "title": "Turkish pizza 'Pide', check all the other one of the street, most of them are super!",
-    "lat": "50.85769752799525",
-    "lon": "4.36934880629891",
+    "lat": "50.858529724540254",
+    "lon": "4.3701800019923445",
     "distance": "15 minutes walk",
-    "gmaps": "https://maps.app.goo.gl/RcXhm1E3dkdNPMSS6",
-    "category": "turkish",
-    "imageUrl": "/map-icon-turkish.png"
-  },
-  {
-    "name": "Has Pide Kebap",
-    "title": "Turkish pizza 'Pide', check all the other one of the street, most of them are super!",
-    "lat": "50.85846959374653",
-    "lon": "4.369906705740225",
-    "distance": "15 minutes walk",
-    "gmaps": "https://maps.app.goo.gl/Ku8SPdr5kQwm7TpDA",
+    "gmaps": "https://g.co/kgs/zEkGvNY",
     "category": "turkish",
     "imageUrl": "/map-icon-turkish.png"
   },
